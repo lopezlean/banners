@@ -1,0 +1,18 @@
+---
+layout: default
+title: Banners
+
+---
+<h1>Banners</h1>
+
+<ul>
+
+{% for banner in site.300x250 %}
+<li>
+<a href="{{ banner.url }}">
+    {{ banner.path }}
+  </a>
+</li>
+{% endfor %}
+</ul>
+

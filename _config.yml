@@ -1,0 +1,16 @@
+name: Banners
+source: html
+destination: site
+keep_files: ["assets"]
+encoding: "utf-8"
+markdown: kramdown
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json","favicon.ico"]
+collections_dir: _collections
+plugins:
+  - jekyll-postfiles
+collections:
+    300x250:
+       output: true
+values:
+    layout: "default"
