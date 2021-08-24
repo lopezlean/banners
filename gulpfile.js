@@ -62,7 +62,7 @@ gulp.task(
               const dirname = path.dirname(file).replace(clearString,"");
               console.log(`copying shared folder to ${dirname}`);
               gulp
-              .src("scss/300x250/main.scss")
+              .src("scss/300x250/style.scss")
               .pipe(sourcemaps.init())
               .pipe(
                 prefix(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true })
