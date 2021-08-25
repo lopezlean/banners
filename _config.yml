@@ -12,5 +12,7 @@ plugins:
 collections:
     300x250:
        output: true
+    300x600:
+       output: true
 values:
     layout: "default"
