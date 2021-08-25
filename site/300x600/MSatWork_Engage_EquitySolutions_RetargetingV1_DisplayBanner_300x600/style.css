@@ -41,8 +41,6 @@ body > a {
   overflow: hidden;
   position: relative; }
   body > a::after {
-    -webkit-box-shadow: inset 0 0 1px #414141;
-    box-shadow: inset 0 0 1px #414141;
     content: '';
     height: 100%;
     left: 0;
@@ -136,12 +134,12 @@ body a {
   animation-name: textline1; }
 
 .l2 {
-  -webkit-animation-name: textline2;
-  animation-name: textline2; }
+  -webkit-animation-name: textline1;
+  animation-name: textline1; }
 
 .l3 {
-  -webkit-animation-name: textline3;
-  animation-name: textline3; }
+  -webkit-animation-name: textline1;
+  animation-name: textline1; }
 
 .framed-img {
   height: 100%;

@@ -42,7 +42,6 @@ body>a {
   position: relative;
 
   &::after {
-    box-shadow: inset 0 0 1px #414141;
     content: '';
     height: 100%;
     left: 0;
@@ -137,7 +136,7 @@ body a {
 }
 
 .l2 {
-  animation-name: textline2;
+  animation-name: textline1;
 }
 
 .framed-img {
