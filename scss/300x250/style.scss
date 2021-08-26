@@ -55,7 +55,7 @@ body>a {
 .tagline {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 20px;
   position: absolute;
   width: 100%;
 
@@ -73,7 +73,7 @@ body>a {
 }
 
 .msg {
-  margin: 0 24px;
+  margin: 0 20px;
   position: absolute;
 
   span {
@@ -117,7 +117,7 @@ body a {
     }
   }
 
-  padding: 24px;
+  padding: 20px;
   position: absolute;
   top: 0;
 }
@@ -159,17 +159,17 @@ body a {
   }
 
   16.66667% {
-    transform: translate(0, 24px);
+    transform: translate(0, 20px);
   }
 
   25.33333%,
   72% {
-    transform: translate(0, 24px);
+    transform: translate(0, 20px);
   }
 
   83.33333%,
   100% {
-    transform: translate(0, 24px);
+    transform: translate(0, 20px);
   }
 }
 
@@ -182,17 +182,17 @@ body a {
   }
 
   16.66667% {
-    transform: translate(-24px, 0);
+    transform: translate(-20px, 0);
   }
 
   25.33333%,
   72% {
-    transform: translate(-24px, 0);
+    transform: translate(-20px, 0);
   }
 
   83.33333%,
   100% {
-    transform: translate(-24px, 0);
+    transform: translate(-20px, 0);
   }
 }
 
@@ -205,7 +205,7 @@ body a {
   }
 
   16.66667% {
-    transform: translate(0, -24px);
+    transform: translate(0, -20px);
   }
 
   25.33333%,
@@ -228,17 +228,17 @@ body a {
   }
 
   16.66667% {
-    transform: translate(24px, 0);
+    transform: translate(20px, 0);
   }
 
   25.33333%,
   72% {
-    transform: translate(24px, 0);
+    transform: translate(20px, 0);
   }
 
   83.33333%,
   100% {
-    transform: translate(24px, 0);
+    transform: translate(20px, 0);
   }
 }
 
