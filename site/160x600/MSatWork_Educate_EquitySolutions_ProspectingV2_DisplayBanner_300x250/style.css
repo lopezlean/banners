@@ -550,8 +550,8 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    -webkit-transform: scale(0.72) translate(0px, -132px);
-    transform: scale(0.72) translate(0px, -132px); } }
+    -webkit-transform: scale(0.76) translate(0px, -132px);
+    transform: scale(0.76) translate(0px, -132px); } }
 
 @keyframes img {
   0%,
@@ -564,12 +564,12 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    -webkit-transform: scale(0.72) translate(0px, -132px);
-    transform: scale(0.72) translate(0px, -132px); } }
+    -webkit-transform: scale(0.76) translate(0px, -132px);
+    transform: scale(0.76) translate(0px, -132px); } }
 
 .framed-img img {
   -webkit-animation-name: img;
   animation-name: img;
-  -webkit-transform: scale(0.72) translate(0px, -132px);
-  -ms-transform: scale(0.72) translate(0px, -132px);
-  transform: scale(0.72) translate(0px, -132px); }
+  -webkit-transform: scale(0.76) translate(0px, -132px);
+  -ms-transform: scale(0.76) translate(0px, -132px);
+  transform: scale(0.76) translate(0px, -132px); }
