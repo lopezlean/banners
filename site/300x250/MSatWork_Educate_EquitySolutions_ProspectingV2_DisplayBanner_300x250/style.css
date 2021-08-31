@@ -326,11 +326,11 @@ body a {
 
 @-webkit-keyframes tagline {
   0%,
-  58.66667% {
+  35% {
     opacity: 0;
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
-  63.55533%,
+  55%,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -338,11 +338,11 @@ body a {
 
 @keyframes tagline {
   0%,
-  58.66667% {
+  35% {
     opacity: 0;
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
-  63.55533%,
+  55%,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -427,11 +427,11 @@ body a {
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
   24.88867%,
-  53.33333% {
+  30% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
-  58.222%,
+  40%,
   100% {
     opacity: 0;
     -webkit-transform: translateY(-50%);
@@ -444,11 +444,11 @@ body a {
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
   24.88867%,
-  53.33333% {
+  30% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
-  58.222%,
+  40%,
   100% {
     opacity: 0;
     -webkit-transform: translateY(-50%);

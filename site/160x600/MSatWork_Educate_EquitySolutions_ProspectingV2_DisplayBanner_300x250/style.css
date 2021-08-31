@@ -105,7 +105,9 @@ body a {
   margin: 0;
   padding: 0 20px;
   position: absolute;
-  top: 422px; }
+  top: 422px;
+  left: 0;
+  right: 0; }
   .services li {
     -webkit-animation-direction: forwards;
     animation-direction: forwards;
