@@ -422,11 +422,11 @@ body a {
 
 @-webkit-keyframes textline1 {
   0%,
-  20% {
+  13% {
     opacity: 0;
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
-  24.88867%,
+  20%,
   30% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -439,11 +439,11 @@ body a {
 
 @keyframes textline1 {
   0%,
-  20% {
+  13% {
     opacity: 0;
     -webkit-transform: translateY(20%);
     transform: translateY(20%); }
-  24.88867%,
+  20%,
   30% {
     opacity: 1;
     -webkit-transform: translateY(0);
