@@ -58,7 +58,7 @@ body > a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 24px;
+  padding: 20px;
   position: absolute;
   width: 100%; }
   .tagline svg {
@@ -71,7 +71,7 @@ body > a {
     text-align: right; }
 
 .msg {
-  margin: 0 24px;
+  margin: 0 20px;
   position: absolute; }
   .msg span {
     display: block;
@@ -95,7 +95,7 @@ body a {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); }
 
 .services {
-  padding: 24px;
+  padding: 20px;
   position: absolute;
   top: 0; }
   .services li {
@@ -151,16 +151,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); }
   25.33333%,
   72% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); }
   83.33333%,
   100% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); } }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); } }
 
 @keyframes c-t {
   0%,
@@ -168,16 +168,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); }
   25.33333%,
   72% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); }
   83.33333%,
   100% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px); } }
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px); } }
 
 @-webkit-keyframes c-r {
   0%,
@@ -185,16 +185,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); }
   25.33333%,
   72% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); }
   83.33333%,
   100% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); } }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); } }
 
 @keyframes c-r {
   0%,
@@ -202,16 +202,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); }
   25.33333%,
   72% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); }
   83.33333%,
   100% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0); } }
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0); } }
 
 @-webkit-keyframes c-b {
   0%,
@@ -219,8 +219,8 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px); }
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px); }
   25.33333%,
   72% {
     -webkit-transform: translate(0, -70px);
@@ -236,8 +236,8 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px); }
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px); }
   25.33333%,
   72% {
     -webkit-transform: translate(0, -70px);
@@ -253,16 +253,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); }
   25.33333%,
   72% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); }
   83.33333%,
   100% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); } }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); } }
 
 @keyframes c-l {
   0%,
@@ -270,16 +270,16 @@ body a {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   16.66667% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); }
   25.33333%,
   72% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); }
   83.33333%,
   100% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0); } }
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0); } }
 
 .frame {
   background: #f2f2f2;
