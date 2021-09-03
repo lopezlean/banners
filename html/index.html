@@ -16,6 +16,19 @@ title: Banners
 {% endfor %}
 </ul>
 
+<h1>300x250 Exite</h1>
+
+<ul>
+
+{% for banner in site.300x250-exite %}
+<li>
+<a href="{{ banner.url }}">
+    {{ banner.path }}
+  </a>
+</li>
+{% endfor %}
+</ul>
+
 <h1>300x600</h1>
 <ul>
 
@@ -39,5 +52,17 @@ title: Banners
   </li>
   {% endfor %}
   </ul>
+
+  <h1>970x250</h1>
+  <ul>
+  
+    {% for banner in site.970x250 %}
+    <li>
+    <a href="{{ banner.url }}">
+        {{ banner.path }}
+      </a>
+    </li>
+    {% endfor %}
+    </ul>
   
   

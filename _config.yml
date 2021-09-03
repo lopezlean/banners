@@ -12,9 +12,13 @@ plugins:
 collections:
     300x250:
        output: true
+    300x250-exite:
+       output: true
     160x600:
        output: true
     300x600:
+       output: true
+    970x250:
        output: true
 values:
     layout: "default"
