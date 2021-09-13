@@ -287,12 +287,12 @@ body a {
 @keyframes tagline {
 
   0%,
-  35% {
+  55% {
     opacity: 0;
     transform: translateY(20%);
   }
 
-  50%,
+  60%,
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -357,12 +357,12 @@ body a {
   }
 
   24.88867%,
-  30% {
+  50% {
     opacity: 1;
     transform: translateY(0);
   }
 
-  40%,
+  55%,
   100% {
     opacity: 0;
     transform: translateY(-50%);
