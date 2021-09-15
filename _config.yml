@@ -9,10 +9,13 @@ exclude: ["node_modules", "gulpfile.js", "package.json","favicon.ico"]
 collections_dir: _collections
 plugins:
   - jekyll-postfiles
+  - jekyll-minifier
 collections:
     300x250:
        output: true
     300x250-exite:
+       output: true
+    300x600-exite:
        output: true
     160x600:
        output: true

@@ -1,0 +1,223 @@
+@import '../fonts';
+@import '../variables';
+
+$animation-duration:7s;
+
+html,
+body {
+  color: #414141;
+  font-family: 'Gloriola';
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  width: 300px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.services {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+ul {
+  font-size: $font-size-300x600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+body>a {
+  background: #f2f2f2;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.tagline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+
+  svg {
+    height: 36px;
+    width: 120px;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.1;
+    margin-top: 6px;
+    text-align: right;
+  }
+}
+
+.msg {
+  margin: 0 20px;
+  position: absolute;
+
+  span {
+    display: block;
+    opacity: 1;
+  }
+}
+
+body a {
+  height: 600px;
+  width: 300px;
+}
+
+.framed-img img,
+.l1,
+.l2,
+.tagline {
+  animation-direction: forwards;
+  animation-duration: $animation-duration;
+  animation-iteration-count: $iteration-count;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+
+.msg {
+  top: 436px;
+  padding-top: 16px;
+}
+
+.tagline {
+  animation-name: tagline;
+  bottom: 0;
+}
+
+.l1 {
+  animation-name: textline1;
+}
+
+.l2 {
+  animation-name: textline1;
+}
+
+
+
+@keyframes c-b {
+
+  0%,
+  30% {
+    
+    transform: translate(0, 0);
+  }
+
+  45%{
+    transform: translate(0, -164px);
+  }
+
+  100% {
+    transform: translate(0, -164px);
+  }
+}
+
+.frame {
+  background: #f2f2f2;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
+.frame-b {
+  animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  animation-iteration-count: $iteration-count;
+  left: -100%;
+  top: 100%;
+  width: 300%;
+}
+
+
+
+
+@keyframes tagline {
+
+  0%,
+  45% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes textline1 {
+
+  0%,
+  35% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  45%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes img {
+  0%,
+  20% {
+    transform: scale(2.5) translateY(90px);
+  }
+  
+  40% {
+    transform: scale(1) translateY(90px);
+
+  }
+}
+
+.framed-img {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  img {
+    border: 0;
+    height: 100%;
+    animation-name: img;
+    animation-duration: $animation-duration;
+    animation-iteration-count: $iteration-count;
+    transform: scale(1) translateY(90px);
+  }
+}
