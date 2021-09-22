@@ -1,7 +1,7 @@
 @import '../fonts';
 @import '../variables';
 
-$animation-duration:7s;
+$animation-duration:8s;
 
 html,
 body {
@@ -130,7 +130,7 @@ body a {
     transform: translate(0, 0);
   }
 
-  45%{
+  36%{
     transform: translate(0, -164px);
   }
 
@@ -197,11 +197,11 @@ body a {
 @keyframes img {
   0%,
   20% {
-    transform: scale(2.5) translateY(90px);
+    transform: scale(3) translateY(100px) translateX(-10px);
   }
-  
-  40% {
-    transform: scale(1) translateY(90px);
+
+  45% {
+    transform: scale(0.8) translateY(100px) translateX(-10px);
 
   }
 }
@@ -213,11 +213,13 @@ body a {
   top: 20%;
   transform: translate(-50%, -50%);
   img {
+    animation-timing-function: ease;
     border: 0;
     height: 100%;
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(1) translateY(90px);
+    transform: scale(0.8) translateY(100px) translateX(-10px);
+
   }
 }
