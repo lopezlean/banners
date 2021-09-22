@@ -103,7 +103,29 @@ gulp.task(
         gulp.src(["shared/**/*"]).pipe(gulp.dest("site/" + dirname + "/shared"));
     });
 });
-
+glob("html/_collections/_160x600-exite/*/index.md", {}, function (er, files) {
+     
+  const clearString = "html/_collections/_";
+  files.forEach(file => {
+    const dirname = path.dirname(file).replace(clearString,"");
+    console.log(`copying shared folder to ${dirname}`);
+    gulp
+    .src("scss/160x600-exite/style.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      prefix(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true })
+    )
+    .pipe(
+      sass({
+        includePaths: ["scss"],
+        outputStyle: 'compressed',
+        onError: browserSync.notify,
+      }).on("error", sass.logError)
+    ).pipe(gulp.dest("site/" + "/" + dirname));;
+    
+    gulp.src(["shared/**/*"]).pipe(gulp.dest("site/" + dirname + "/shared"));
+});
+});
 
 glob("html/_collections/_300x600-exite/*/index.md", {}, function (er, files) {
      
@@ -128,6 +150,31 @@ glob("html/_collections/_300x600-exite/*/index.md", {}, function (er, files) {
     gulp.src(["shared/**/*"]).pipe(gulp.dest("site/" + dirname + "/shared"));
 });
 });
+
+glob("html/_collections/_970x250-exite/*/index.md", {}, function (er, files) {
+     
+  const clearString = "html/_collections/_";
+  files.forEach(file => {
+    const dirname = path.dirname(file).replace(clearString,"");
+    console.log(`copying shared folder to ${dirname}`);
+    gulp
+    .src("scss/970x250-exite/style.scss")
+    .pipe(sourcemaps.init())
+    .pipe(
+      prefix(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true })
+    )
+    .pipe(
+      sass({
+        includePaths: ["scss"],
+        outputStyle: 'compressed',
+        onError: browserSync.notify,
+      }).on("error", sass.logError)
+    ).pipe(gulp.dest("site/" + "/" + dirname));;
+    
+    gulp.src(["shared/**/*"]).pipe(gulp.dest("site/" + dirname + "/shared"));
+});
+});
+
 
 glob("html/_collections/_970x250/*/index.md", {}, function (er, files) {
      
