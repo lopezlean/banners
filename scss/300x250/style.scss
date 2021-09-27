@@ -395,7 +395,7 @@ body a {
 @keyframes img {
   0%,
   6.66667% {
-    transform: scale(1) translateY(0);
+    transform: scale(2) translateY(50px);
   }
   16.66667% {
     transform: scale(0.84) translateY(0);
@@ -410,8 +410,34 @@ body a {
   }
 }
 
+
+@keyframes financial-wellness-img {
+  0%,
+  6.66667% {
+    transform: scale(2) translateY(20px) translateX(100px);
+  }
+  16.66667% {
+    transform: scale(0.84) translateY(0);
+  }
+  25.33333%,
+  72% {
+    transform: scale(0.72) translateY(-35px);
+  }
+  83.33333%,
+  100% {
+    transform: scale(0.72) translateY(-105px);
+  }
+}
+
+
 .framed-img img {
   animation-name: img;
   animation-iteration-count: $iteration-count;
   transform: scale(0.72) translateY(-105px);
+}
+
+.financial-wellness{
+  .framed-img img {
+    animation-name: financial-wellness-img;
+  }
 }

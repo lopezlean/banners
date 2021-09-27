@@ -1,5 +1,6 @@
 ---
 layout: "300x250"
+bodyClass: "financial-wellness"
 l1: "Replace your employees’ debt"
 l2: "with financial confidence."
 taglineTitle: "Morgan Stanley at Work"
