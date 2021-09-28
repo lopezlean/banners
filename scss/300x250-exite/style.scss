@@ -130,7 +130,7 @@ body a {
     transform: translate(0, 0);
   }
 
-  60% {
+  55% {
     transform: translate(0, -133px);
   }
   100% {
@@ -196,14 +196,27 @@ body a {
 @keyframes img {
   0%,
   20% {
-    transform: scale(1.5) translateY(100px);
+    transform: scale(2.5) translateY(115px);
   }
   
-  60% {
-    transform: scale(0.72) translateY(90px);
+  50% {
+    transform: scale(0.85) translateY(75px);
 
   }
 }
+
+@keyframes img-warehouse {
+  0%,
+  20% {
+    transform: scale(2) translateY(95px) translateX(70px);
+  }
+  
+  50% {
+    transform: scale(0.85) translateY(75px);
+
+  }
+}
+
 
 .framed-img {
   height: 100%;
@@ -217,6 +230,14 @@ body a {
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.72) translateY(90px);
+    transform: scale(0.85) translateY(75px);
+  }
+}
+
+.warehouse{
+  .framed-img{
+    img{
+      animation-name: img-warehouse;
+    }
   }
 }
