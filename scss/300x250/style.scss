@@ -1,6 +1,10 @@
 @import '../fonts';
 @import '../variables';
 
+$animation-duration: 14s;
+
+// texto a la altura de morgan
+
 html,
 body {
   color: $color;
@@ -92,7 +96,7 @@ body a {
 .l2,
 .tagline {
   animation-direction: forwards;
-  animation-duration: 12s;
+  animation-duration: $animation-duration;
   animation-iteration-count: $iteration-count;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -100,7 +104,7 @@ body a {
 .services {
   li {
     animation-direction: forwards;
-    animation-duration: 12s;
+    animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 
@@ -123,7 +127,7 @@ body a {
 }
 
 .msg {
-  bottom: 24px;
+  bottom: 14px;
 }
 
 .tagline {
@@ -251,7 +255,7 @@ body a {
 }
 
 .frame-t {
-  animation: c-t 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  animation: c-t $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
   left: -100%;
   top: -100%;
@@ -259,7 +263,7 @@ body a {
 }
 
 .frame-r {
-  animation: c-r 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  animation: c-r $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
   height: 300%;
   left: 100%;
@@ -267,7 +271,7 @@ body a {
 }
 
 .frame-b {
-  animation: c-b 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
   left: -100%;
   top: 100%;
@@ -275,7 +279,7 @@ body a {
 }
 
 .frame-l {
-  animation: c-l 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  animation: c-l $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
   height: 300%;
   left: -100%;
