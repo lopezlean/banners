@@ -3,6 +3,7 @@
 
 //$animation-duration:7s;
 $animation-duration: 9s;
+$animation-duration-retargeting: 12s;
 
 html,
 body {
@@ -223,7 +224,6 @@ body a {
   }
 }
 
-.retargeting,
 .warehouse {
   .framed-img {
     img {
@@ -242,45 +242,87 @@ body a {
   }
 }
 
-@keyframes service1 {
+
+@keyframes img-retargeting {
   0%,
-  80% {
+  20% {
+    transform: scale(2) translateY(95px) translateX(70px);
+  }
+
+  40% {
+    transform: scale(0.85) translateY(75px);
+  }
+}
+
+@keyframes service-retargeting {
+  0%,
+  60% {
     opacity: 0;
     transform: translateY(20%);
   }
 
-  84.88867%,
+  65%,
   100% {
     opacity: 1;
     transform: translateY(0%);
   }
 }
 
-
 @keyframes textline-retargeting {
   0%,
-  50% {
+  35% {
     opacity: 0;
     transform: translateY(-20%);
   }
 
-  60%,75% {
+  40%,
+  60% {
     opacity: 1;
     transform: translateY(0);
   }
-  85%,
-  100%{
+
+  65%,
+  89% {
     opacity: 0;
-    transform: translateY(-3%);
+    transform: translateY(-13%);
+  }
+}
+
+@keyframes tagline-retargeting {
+  0%,
+  35% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  40%,
+  60% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+  .framed-img {
+    img {
+      animation-name: img-retargeting;
+    }
+  }
   .l1 {
     opacity: 0;
     animation-name: textline-retargeting;
   }
-  
+
   .l2 {
     opacity: 0;
     animation-name: textline-retargeting;
@@ -296,12 +338,7 @@ body a {
 
     li {
       font-size: 14px;
-      animation-direction: forwards;
-      animation-duration: $animation-duration;
-      animation-iteration-count: $iteration-count;
-      animation-timing-function: ease-out;
-      animation-name: service1;
-
+      animation-name: service-retargeting;
     }
   }
 }
