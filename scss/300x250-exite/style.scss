@@ -2,7 +2,7 @@
 @import '../variables';
 
 //$animation-duration:7s;
-$animation-duration:9s;
+$animation-duration: 9s;
 
 html,
 body {
@@ -19,15 +19,9 @@ body {
   box-sizing: border-box;
 }
 
-.services {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 p,
 ul {
-  font-size: $font-size-300x25;
+  font-size: 1.6em;
   line-height: 1.2;
   margin: 0;
 }
@@ -38,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-body>a {
+body > a {
   background: #f2f2f2;
   display: inline-block;
   overflow: hidden;
@@ -101,11 +95,9 @@ body a {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-
-
 .msg {
   top: 117px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .tagline {
@@ -121,13 +113,9 @@ body a {
   animation-name: textline1;
 }
 
-
-
 @keyframes c-b {
-
   0%,
   30% {
-    
     transform: translate(0, 0);
   }
 
@@ -147,7 +135,6 @@ body a {
   width: 100%;
 }
 
-
 .frame-b {
   animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
@@ -156,11 +143,7 @@ body a {
   width: 300%;
 }
 
-
-
-
 @keyframes tagline {
-
   0%,
   65% {
     opacity: 0;
@@ -173,16 +156,14 @@ body a {
   }
 }
 
-
 @keyframes textline1 {
-
   0%,
   50% {
     opacity: 0;
     transform: translateY(-20%);
   }
 
-  60%{
+  60% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -193,16 +174,14 @@ body a {
   }
 }
 
-
 @keyframes img {
   0%,
   20% {
     transform: scale(2.5) translateY(115px);
   }
-  
+
   50% {
     transform: scale(0.85) translateY(75px);
-
   }
 }
 
@@ -211,13 +190,22 @@ body a {
   20% {
     transform: scale(2) translateY(95px) translateX(70px);
   }
-  
+
   50% {
     transform: scale(0.85) translateY(75px);
-
   }
 }
 
+@keyframes img-champagne {
+  0%,
+  20% {
+    transform: scale(1.1) translateY(100px);
+  }
+
+  50% {
+    transform: scale(0.54) translateY(75px);
+  }
+}
 
 .framed-img {
   height: 100%;
@@ -235,10 +223,85 @@ body a {
   }
 }
 
-.warehouse{
-  .framed-img{
-    img{
+.retargeting,
+.warehouse {
+  .framed-img {
+    img {
       animation-name: img-warehouse;
+    }
+  }
+}
+
+.champagne {
+  .framed-img {
+    background-color: red;
+    img {
+      animation-name: img-champagne;
+      transform: scale(0.54) translateY(75px);
+    }
+  }
+}
+
+@keyframes service1 {
+  0%,
+  80% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  84.88867%,
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes textline-retargeting {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  60%,75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85%,
+  100%{
+    opacity: 0;
+    transform: translateY(-3%);
+  }
+}
+
+.retargeting {
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 117px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 14px;
+      animation-direction: forwards;
+      animation-duration: $animation-duration;
+      animation-iteration-count: $iteration-count;
+      animation-timing-function: ease-out;
+      animation-name: service1;
+
     }
   }
 }

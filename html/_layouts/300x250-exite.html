@@ -50,6 +50,13 @@
         <span class="l1">{{page.l1}}</span>
         <span class="l2">{{page.l2}}</span>
       </p>
+      {% if page.bodyClass == "retargeting" %}
+      <ul class="services">
+        <li>{{page.service1}}</li>
+        <li>{{page.service2}}</li>
+        <li>{{page.service3}}</li>
+      </ul>
+      {% endif %}
     </a>
   </body>
 </html>
