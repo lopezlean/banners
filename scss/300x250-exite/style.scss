@@ -256,13 +256,16 @@ body a {
 
 @keyframes service-retargeting {
   0%,
-  60% {
+  80% {
     opacity: 0;
     transform: translateY(20%);
   }
 
-  65%,
-  100% {
+  91%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100%{
     opacity: 1;
     transform: translateY(0%);
   }
@@ -276,15 +279,14 @@ body a {
   }
 
   40%,
-  60% {
+  70% {
     opacity: 1;
     transform: translateY(0);
   }
 
-  65%,
-  89% {
+  80%{
     opacity: 0;
-    transform: translateY(-13%);
+    transform: translateY(20%);
   }
 }
 
