@@ -241,10 +241,9 @@ body a {
 
 .champagne {
   .framed-img {
-    background-color: red;
     img {
       animation-name: img-champagne;
-      transform: scale(0.54) translateY(75px);
+      transform: scale(0.54) translateY(65px);
     }
   }
 }
