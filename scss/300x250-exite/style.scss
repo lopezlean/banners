@@ -188,16 +188,7 @@ body a {
   }
 }
 
-@keyframes img-champagne {
-  0%,
-  20% {
-    transform: scale(1.2) translateY(100px) translateX(5px);
-  }
 
-  50% {
-    transform: scale(0.535) translateY(78px);
-  }
-}
 
 @keyframes img {
   0%{
@@ -239,11 +230,25 @@ body a {
   }
 }
 
+@keyframes img-champagne {
+  0%{
+    transform: scale(1) translateY(210px) translateX(-10px);
+  }
+  35%{
+    transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+  100%{
+    transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+}
 .champagne {
   .framed-img {
+    width: 958px;
+    height: 719px;
     img {
+      width: 958px;
       animation-name: img-champagne;
-      transform: scale(0.535) translateY(78px);
+      transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
     }
   }
 }
