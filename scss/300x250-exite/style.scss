@@ -177,14 +177,27 @@ body a {
 }
 
 
+
+.warehouse {
+  .framed-img {
+    width: 2066px;
+    height: 1548px;
+    img {
+      width: 2066px;
+      animation-name: img-warehouse;
+      transform: scale(0.2333) translateY(387px) translateX(-10px);
+    }
+  }
+}
+
 @keyframes img-warehouse {
-  0%,
-  20% {
-    transform: scale(3) translateY(48px) translateX(43px);
+  0%
+  {
+    transform: scale(1) translateY(198px) translateX(103px);
   }
 
-  50% {
-    transform: scale(0.70) translateY(87px);
+  35% {
+    transform: scale(0.2333) translateY(387px) translateX(-10px);
   }
 }
 
@@ -221,14 +234,6 @@ body a {
   }
 }
 
-.warehouse {
-  .framed-img {
-    img {
-      animation-name: img-warehouse;
-      transform: scale(0.70) translateY(87px);
-    }
-  }
-}
 
 @keyframes img-champagne {
   0%{
@@ -255,13 +260,13 @@ body a {
 
 
 @keyframes img-retargeting {
-  0%,
-  20% {
-    transform: scale(3) translateY(48px) translateX(43px);
+  0%
+  {
+    transform: scale(1) translateY(198px) translateX(103px);
   }
 
-  40% {
-    transform: scale(0.70) translateY(87px);
+  30% {
+    transform: scale(0.2333) translateY(387px) translateX(-10px);
   }
 }
 
@@ -327,9 +332,12 @@ body a {
     animation-name: tagline-retargeting;
   }
   .framed-img {
+    width: 2066px;
+    height: 1548px;
     img {
+      width: 2066px;
       animation-name: img-retargeting;
-      transform: scale(0.70) translateY(87px);
+      transform: scale(0.2333) translateY(387px) translateX(-10px);
     }
   }
   .l1 {
