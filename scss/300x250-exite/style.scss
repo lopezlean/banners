@@ -191,7 +191,8 @@ body a {
 }
 
 @keyframes img-warehouse {
-  0%
+  0%,
+  10%
   {
     transform: scale(1) translateY(198px) translateX(103px);
   }
@@ -204,7 +205,8 @@ body a {
 
 
 @keyframes img {
-  0%{
+  0%,
+  10%{
     transform: scale(1) translateY(300px) translateX(-300px);
   }
   35%{
@@ -236,7 +238,8 @@ body a {
 
 
 @keyframes img-champagne {
-  0%{
+  0%,
+  10%{
     transform: scale(1) translateY(210px) translateX(-10px);
   }
   35%{
@@ -260,7 +263,8 @@ body a {
 
 
 @keyframes img-retargeting {
-  0%
+  0%,
+  10%
   {
     transform: scale(1) translateY(198px) translateX(103px);
   }
