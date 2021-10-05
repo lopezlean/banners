@@ -1,7 +1,7 @@
 @import '../fonts';
 @import '../variables';
 
-$animation-duration:8s;
+$animation-duration: 8s;
 
 html,
 body {
@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-body>a {
+body > a {
   background: #f2f2f2;
   display: inline-block;
   overflow: hidden;
@@ -100,8 +100,6 @@ body a {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-
-
 .msg {
   top: 436px;
   padding-top: 16px;
@@ -120,17 +118,13 @@ body a {
   animation-name: textline1;
 }
 
-
-
 @keyframes c-b {
-
   0%,
   30% {
-    
     transform: translate(0, 0);
   }
 
-  36%{
+  36% {
     transform: translate(0, -164px);
   }
 
@@ -147,7 +141,6 @@ body a {
   width: 100%;
 }
 
-
 .frame-b {
   animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
@@ -156,11 +149,7 @@ body a {
   width: 300%;
 }
 
-
-
-
 @keyframes tagline {
-
   0%,
   45% {
     opacity: 0;
@@ -173,16 +162,14 @@ body a {
   }
 }
 
-
 @keyframes textline1 {
-
   0%,
   35% {
     opacity: 0;
     transform: translateY(50px);
   }
 
-  45%{
+  45% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -193,16 +180,14 @@ body a {
   }
 }
 
-
 @keyframes img {
   0%,
   20% {
-    transform: scale(3) translateY(100px) translateX(-10px);
+    transform: scale(2.95) translateY(190px) translateX(25px);
   }
 
   45% {
-    transform: scale(0.8) translateY(100px) translateX(-10px);
-
+    transform: scale(1) translateY(180px) translateX(0px);
   }
 }
 
@@ -219,7 +204,26 @@ body a {
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.8) translateY(100px) translateX(-10px);
+    transform: scale(1) translateY(180px) translateX(0px);
+  }
+}
 
+@keyframes img-champagne {
+  0%,
+  20% {
+    transform: scale(2.65) translateY(138px) translateX(65px);
+  }
+
+  45% {
+    transform: scale(0.75) translateY(135px) translateX(0px);
+  }
+}
+
+.champagne {
+  .framed-img {
+    img {
+      animation-name: img-champagne;
+      transform: scale(0.75) translateY(135px) translateX(0px);
+    }
   }
 }
