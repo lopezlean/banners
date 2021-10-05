@@ -190,11 +190,11 @@ body a {
 @keyframes img-warehouse {
   0%,
   20% {
-    transform: scale(2) translateY(95px) translateX(70px);
+    transform: scale(3) translateY(48px) translateX(43px);
   }
 
   50% {
-    transform: scale(0.85) translateY(75px);
+    transform: scale(0.70) translateY(87px);
   }
 }
 
@@ -216,6 +216,11 @@ body a {
   top: 10%;
   transform: translate(-50%, -50%);
   img {
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
     border: 0;
     height: 100%;
     animation-name: img;
@@ -229,6 +234,7 @@ body a {
   .framed-img {
     img {
       animation-name: img-warehouse;
+      transform: scale(0.70) translateY(87px);
     }
   }
 }
@@ -247,11 +253,11 @@ body a {
 @keyframes img-retargeting {
   0%,
   20% {
-    transform: scale(2) translateY(95px) translateX(70px);
+    transform: scale(3) translateY(48px) translateX(43px);
   }
 
   40% {
-    transform: scale(0.85) translateY(75px);
+    transform: scale(0.70) translateY(87px);
   }
 }
 
@@ -319,6 +325,7 @@ body a {
   .framed-img {
     img {
       animation-name: img-retargeting;
+      transform: scale(0.70) translateY(87px);
     }
   }
   .l1 {
@@ -335,7 +342,7 @@ body a {
     margin: 0px;
     padding: 0px;
     position: absolute;
-    top: 117px;
+    top: 133px;
     padding-top: 12px;
     margin-left: 20px;
 
