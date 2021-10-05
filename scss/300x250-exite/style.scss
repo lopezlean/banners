@@ -176,16 +176,6 @@ body a {
   }
 }
 
-@keyframes img {
-  0%,
-  20% {
-    transform: scale(2.25) translateY(107px) translateX(0px);
-  }
-
-  50% {
-    transform: scale(0.70) translateY(65px) translateX(0px);
-  }
-}
 
 @keyframes img-warehouse {
   0%,
@@ -209,19 +199,34 @@ body a {
   }
 }
 
+@keyframes img {
+  0%{
+    transform: scale(1) translateY(300px) translateX(-300px);
+  }
+  35%{
+    transform:  scale(0.31111) translateY(355px) translateX(-280px);
+  }
+  100%{
+    transform:  scale(0.31111) translateY(355px) translateX(-280px);
+  }
+
+ 
+}
+
 .framed-img {
-  height: 100%;
+  width: 1659px;
+  height: 1245px;
   left: 50%;
   position: absolute;
-  top: 10%;
+  top: 0%;
   transform: translate(-50%, -50%);
   img {
     border: 0;
-    height: 100%;
+    width:1659px;
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.70) translateY(65px) translateX(0px);
+    transform:  scale(0.31111) translateY(355px) translateX(-300px);
   }
 }
 
