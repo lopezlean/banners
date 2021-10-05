@@ -59,8 +59,8 @@ body > a {
   width: 100%;
 
   svg {
-    height: 36px;
-    width: 120px;
+    height: 24px;
+    width: 105px;
   }
 
   p {
@@ -97,7 +97,7 @@ body a {
 }
 
 .msg {
-  top: 117px;
+  top: 133px;
   padding-top: 12px;
 }
 
@@ -140,7 +140,7 @@ body a {
   animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation-iteration-count: $iteration-count;
   left: -100%;
-  top: 100%;
+  top: 106.5%;
   width: 300%;
 }
 
@@ -178,11 +178,11 @@ body a {
 @keyframes img {
   0%,
   20% {
-    transform: scale(2.5) translateY(115px);
+    transform: scale(2.25) translateY(107px) translateX(0px);
   }
 
   50% {
-    transform: scale(0.85) translateY(75px);
+    transform: scale(0.70) translateY(65px) translateX(0px);
   }
 }
 
@@ -204,7 +204,7 @@ body a {
   }
 
   50% {
-    transform: scale(0.54) translateY(75px);
+    transform: scale(0.54) translateY(65px);
   }
 }
 
@@ -220,7 +220,7 @@ body a {
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.85) translateY(75px);
+    transform: scale(0.70) translateY(65px) translateX(0px);
   }
 }
 
