@@ -227,3 +227,24 @@ body a {
     }
   }
 }
+
+
+@keyframes img-warehouse {
+  0%,
+  20% {
+    transform: scale(2.65) translateY(138px) translateX(65px);
+  }
+
+  45% {
+    transform: scale(0.75) translateY(120px) translateX(-10px);
+  }
+}
+
+.warehouse {
+  .framed-img {
+    img {
+      animation-name: img-warehouse;
+      transform: scale(0.75) translateY(120px) translateX(-10px);
+    }
+  }
+}
