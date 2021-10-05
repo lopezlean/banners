@@ -18,6 +18,7 @@ body {
 
 * {
   box-sizing: border-box;
+  //animation-play-state: paused !important;
 }
 
 p,
@@ -200,7 +201,7 @@ body a {
 @keyframes img-champagne {
   0%,
   20% {
-    transform: scale(1.1) translateY(100px);
+    transform: scale(1.2) translateY(100px) translateX(5px);
   }
 
   50% {
