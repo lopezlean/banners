@@ -2,6 +2,7 @@
 @import '../variables';
 
 $animation-duration: 8s;
+$animation-duration-retargeting: 11s;
 
 html,
 body {
@@ -232,7 +233,7 @@ body a {
 @keyframes img-warehouse {
   0%,
   20% {
-    transform: scale(2.65) translateY(138px) translateX(65px);
+    transform: scale(3.85) translateY(60px) translateX(78px);
   }
 
   45% {
@@ -245,6 +246,129 @@ body a {
     img {
       animation-name: img-warehouse;
       transform: scale(0.75) translateY(120px) translateX(-10px);
+    }
+  }
+}
+
+
+
+@keyframes img-retargeting {
+  0%,
+  20% {
+    transform: scale(3.85) translateY(60px) translateX(78px);
+  }
+
+  45% {
+    transform: scale(0.75) translateY(120px) translateX(-10px);
+  }
+}
+
+@keyframes service-retargeting {
+  0%,
+  80% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  91%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textline-retargeting {
+  0%,
+  35% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  40%,
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80%{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+
+@keyframes tagline-retargeting {
+  0%,
+  45% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes c-b-retargeting {
+  0%,
+  30% {
+    transform: translate(0, 0);
+  }
+
+  36% {
+    transform: translate(0, -164px);
+  }
+
+  100% {
+    transform: translate(0, -164px);
+  }
+}
+
+.retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+  .framed-img {
+    img {
+      animation-name: img-retargeting;
+      transform: scale(0.75) translateY(120px) translateX(-10px);
+    }
+  }
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .frame-b {
+    animation: c-b-retargeting $animation-duration-retargeting cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 436px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 19px;
+      animation-name: service-retargeting;
     }
   }
 }
