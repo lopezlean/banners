@@ -1,5 +1,6 @@
 ---
 layout: "160x600-exite"
+bodyClass: "champagne"
 l1: "When employees"
 l2: " win, companies"
 l3: "can too."
