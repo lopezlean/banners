@@ -1,5 +1,6 @@
 ---
 layout: "970x250-exite"
+bodyClass: "warehouse"
 l1: "When employees"
 l2: "win, companies"
 l3: "can too."

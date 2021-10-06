@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="ad.size" content="width=970,height=250" />
   </head>
-  <body>
+  <body class="{{page.bodyClass}}">
     <a href="javascript:navigate();" title="Select here to learn more">
       <div class="framed-img">
         <img
@@ -51,11 +51,13 @@
           {{page.taglineSlogan}}
         </p>
       </div>
+      {% if page.bodyClass == "retargeting" %}
       <ul class="services">
         <li>{{page.service1}}</li>
         <li>{{page.service2}}</li>
         <li>{{page.service3}}</li>
       </ul>
+      {% endif %}
     </a>
   </body>
 </html>
