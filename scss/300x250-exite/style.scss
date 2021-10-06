@@ -312,12 +312,12 @@ body a {
 
 @keyframes tagline-retargeting {
   0%,
-  35% {
+  45% {
     opacity: 0;
     transform: translateY(20%);
   }
-  40%,
-  60% {
+  55%,
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -364,6 +364,8 @@ body a {
 
     li {
       font-size: 14px;
+      line-height: 15.4px;
+
       animation-name: service-retargeting;
     }
   }
