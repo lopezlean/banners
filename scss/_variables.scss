@@ -8,6 +8,7 @@ $color: #000;
 // added this here to no edit all files
 .framed-img {
   img {
+    -webkit-backface-visibility: hidden;
     image-rendering: -moz-crisp-edges; /* Firefox */
     image-rendering: -o-crisp-edges; /* Opera */
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
