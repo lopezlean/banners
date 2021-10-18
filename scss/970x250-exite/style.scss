@@ -321,7 +321,7 @@ body a {
   -webkit-animation: c-l 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   animation: c-l 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   height: 300%;
-  left: -100%;
+  left: -105%;
   top: -100%;
 }
 
@@ -421,7 +421,7 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.30) translate(414px, 221px);
+    transform: scale(0.3) translate(261px, 221px);
   }
 }
 
@@ -430,7 +430,7 @@ body a {
   height: 1428px;
   img {
     animation-name: img;
-    transform: scale(0.30) translate(414px, 221px);
+    transform: scale(0.3) translate(261px, 221px);
     width: 3000px;
     height: 1428px;
   }
@@ -448,9 +448,33 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.315) translate(414px, 221px);
+    transform: scale(0.315) translate(290px, 221px);
   }
 }
+
+@keyframes img-retargeting {
+  0%,
+  6.66667% {
+    transform: scale(1) translate(-50px, 224px);
+  }
+
+  16.66667% {
+    transform: scale(0.50) translate(-50px, 224px);
+  }
+
+  25.33333%,
+  53.33333%
+  {
+    transform: scale(0.315) translate(290px, 221px);
+  }
+
+  58.222%,
+  100%
+  {
+    transform: scale(0.29) translate(380px, 237px);
+  }
+}
+
 
 .warehouse{
   
@@ -460,7 +484,7 @@ body a {
     height: 1428px;
     img {
       animation-name: img-warehouse;
-      transform: scale(0.315) translate(414px, 221px);
+      transform: scale(0.315) translate(290px, 221px);
       width: 3000px;
       height: 1428px;
     }
@@ -481,7 +505,7 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.43) translate(290px, 101px);
+    transform: scale(0.43) translate(155px, 101px);
   }
 }
 
@@ -494,7 +518,7 @@ body a {
     border: 4px solid red;
     img {
       animation-name: img-champagne;
-      transform: scale(0.43) translate(290px, 101px);
+      transform: scale(0.43) translate(155px, 101px);
       width: 1772px;
       height: 1331px;
     }
@@ -531,8 +555,8 @@ body a {
     width: 3000px;
     height: 1428px;
     img {
-      animation-name: img-warehouse;
-      transform: scale(0.315) translate(414px, 221px);
+      animation-name: img-retargeting;
+      transform: scale(0.29) translate(380px, 237px);
       width: 3000px;
       height: 1428px;
     }
