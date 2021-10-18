@@ -1,8 +1,8 @@
 @import '../fonts';
 @import '../variables';
 
-$animation-duration: 7s;
-$animation-duration-retargeting: 9s;
+$animation-duration: 8s;
+$animation-duration-retargeting: 10s;
 
 html,
 body {
@@ -126,11 +126,11 @@ body a {
 
 @keyframes c-b {
   0%,
-  30% {
+  20% {
     transform: translate(0, 0);
   }
 
-  36% {
+  26% {
     transform: translate(0, -164px);
   }
 
@@ -157,25 +157,29 @@ body a {
 
 @keyframes tagline {
   0%,
-  45% {
+  35% {
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(15px);
   }
 
-  50% {
+  40%{
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
 @keyframes textline1 {
   0%,
-  35% {
+  25% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(10px);
   }
 
-  45% {
+  35% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -188,10 +192,10 @@ body a {
 
 @keyframes img {
   0%,
-  20% {
+  10% {
     transform: scale(1) translateY(280px) translateX(-320px);
   }
-  45% {
+  25% {
     transform: scale(0.5) translateY(280px) translateX(-350px);
   }
 
