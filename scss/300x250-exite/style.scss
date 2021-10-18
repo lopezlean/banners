@@ -176,7 +176,58 @@ body a {
   }
 }
 
+@keyframes img {
+  0%,
+  10% {
+    transform: scale(1) translateY(300px) translateX(-300px);
+  }
+  35% {
+    transform: scale(0.31111) translateY(355px) translateX(-280px);
+  }
+  100% {
+    transform: scale(0.31111) translateY(355px) translateX(-280px);
+  }
+}
 
+
+@keyframes img-champagne {
+  0%,
+  10% {
+    transform: scale(1) translateY(210px) translateX(-10px);
+  }
+  35% {
+    transform: scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+  100% {
+    transform: scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+}
+.champagne {
+  .framed-img {
+    width: 958px;
+    height: 719px;
+    img {
+      width: 958px;
+      animation-name: img-champagne;
+      transform: scale(0.441666666666667) translateY(220px) translateX(-20px);
+    }
+  }
+}
+
+
+
+@keyframes img-warehouse {
+  0%,
+  10% {
+    transform: scale(1) translateY(198px) translateX(103px);
+  }
+  35% {
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
+  }
+  100% {
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
+  }
+}
 
 .warehouse {
   .framed-img {
@@ -185,39 +236,11 @@ body a {
     img {
       width: 2066px;
       animation-name: img-warehouse;
-      transform: scale(0.2333) translateY(387px) translateX(-10px);
+      transform: scale(0.2267) translateY(414px) translateX(-30px);
     }
   }
 }
 
-@keyframes img-warehouse {
-  0%,
-  10%
-  {
-    transform: scale(1) translateY(198px) translateX(103px);
-  }
-
-  35% {
-    transform: scale(0.2333) translateY(387px) translateX(-10px);
-  }
-}
-
-
-
-@keyframes img {
-  0%,
-  10%{
-    transform: scale(1) translateY(300px) translateX(-300px);
-  }
-  35%{
-    transform:  scale(0.31111) translateY(355px) translateX(-280px);
-  }
-  100%{
-    transform:  scale(0.31111) translateY(355px) translateX(-280px);
-  }
-
- 
-}
 
 .framed-img {
   width: 1659px;
@@ -228,49 +251,28 @@ body a {
   transform: translate(-50%, -50%);
   img {
     border: 0;
-    width:1659px;
+    width: 1659px;
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform:  scale(0.31111) translateY(355px) translateX(-280px);
+    transform: scale(0.31111) translateY(355px) translateX(-280px);
   }
 }
 
-
-@keyframes img-champagne {
-  0%,
-  10%{
-    transform: scale(1) translateY(210px) translateX(-10px);
-  }
-  35%{
-    transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
-  }
-  100%{
-    transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
-  }
-}
-.champagne {
-  .framed-img {
-    width: 958px;
-    height: 719px;
-    img {
-      width: 958px;
-      animation-name: img-champagne;
-      transform:  scale(0.441666666666667) translateY(220px) translateX(-20px);
-    }
-  }
-}
 
 
 @keyframes img-retargeting {
   0%,
-  10%
-  {
+  10% {
     transform: scale(1) translateY(198px) translateX(103px);
   }
 
   30% {
-    transform: scale(0.2333) translateY(387px) translateX(-10px);
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
+  }
+
+  100% {
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
   }
 }
 
@@ -281,11 +283,11 @@ body a {
     transform: translateY(20%);
   }
 
-  91%{
+  91% {
     opacity: 1;
     transform: translateY(0%);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
@@ -304,7 +306,7 @@ body a {
     transform: translateY(0);
   }
 
-  80%{
+  80% {
     opacity: 0;
     transform: translateY(20%);
   }
@@ -329,6 +331,7 @@ body a {
   .l1,
   .l2,
   .tagline {
+    animation-direction: forwards;
     animation-duration: $animation-duration-retargeting;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
@@ -341,7 +344,7 @@ body a {
     img {
       width: 2066px;
       animation-name: img-retargeting;
-      transform: scale(0.2333) translateY(387px) translateX(-10px);
+      transform: scale(0.2267) translateY(414px) translateX(-30px);
     }
   }
   .l1 {

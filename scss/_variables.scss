@@ -8,6 +8,10 @@ $color: #000;
 // added this here to no edit all files
 .framed-img {
   img {
+    backface-visibility: hidden;
+    filter: blur(.0px);
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
     -webkit-backface-visibility: hidden;
     image-rendering: -moz-crisp-edges; /* Firefox */
     image-rendering: -o-crisp-edges; /* Opera */
