@@ -189,28 +189,35 @@ body a {
 @keyframes img {
   0%,
   20% {
-    transform: scale(1.5) translateY(120px) translateX(20px);
+    transform: scale(1) translateY(280px) translateX(-320px);
+  }
+  45% {
+    transform: scale(0.5) translateY(280px) translateX(-350px);
   }
 
-  45% {
-    transform: scale(0.75) translateY(123px) translateX(0px);
+  100% {
+    transform: scale(0.5) translateY(280px) translateX(-350px);
   }
 }
 
 .framed-img {
-  height: 100%;
+
   left: 50%;
   position: absolute;
   top: 20%;
   transform: translate(-50%, -50%);
+  width: 2049px;
+  height: 1537px;
   img {
+    width: 2049px;
+    height: 1537px;
     animation-timing-function: ease;
     border: 0;
-    height: 100%;
+    
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.75) translateY(123px) translateX(0px);
+    transform: scale(0.5) translateY(280px) translateX(-350px);
   }
 }
 
