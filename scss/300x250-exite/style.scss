@@ -232,6 +232,7 @@ body a {
     height: 1548px;
     img {
       width: 2066px;
+      //animation-timing-function: ease-in;
       animation-name: img-warehouse;
       transform: scale(0.2267) translateY(414px) translateX(-30px);
     }
