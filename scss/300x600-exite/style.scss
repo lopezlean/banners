@@ -229,6 +229,26 @@ body a {
   }
 }
 
+@keyframes img-champagne2 {
+  0%,
+  20% {
+    transform: scale(2.8) translateY(108px) translateX(-25px);
+  }
+
+  45% {
+    transform: scale(0.85) translateY(108px) translateX(-25px);
+  }
+}
+
+.champagne2 {
+  .framed-img {
+    img {
+      animation-name: img-champagne2;
+      transform: scale(0.85) translateY(108px) translateX(-25px);
+    }
+  }
+}
+
 
 @keyframes img-warehouse {
   0%,
