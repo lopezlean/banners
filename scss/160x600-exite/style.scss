@@ -227,18 +227,23 @@ body a {
 
 @keyframes img-champagne {
   0%,
-  20% {
-    transform: scale(1.3) translateY(176px) translateX(-10px);
+  10% {
+    transform: scale(1) translateY(176px) translateX(-10px);
   }
 
-  45% {
-    transform: scale(0.75) translateY(123px) translateX(0px);
+  35% {
+    transform: scale(0.5) translateY(175px) translateX(-30px);
   }
 }
 .champagne {
   .framed-img {
+    width: 1266px;
+    height: 951px;
     img {
+      width: 1266px;
+      height: 951px;
       animation-name: img-champagne;
+      transform: scale(0.5) translateY(175px) translateX(-30px);
     }
   }
 }
