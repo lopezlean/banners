@@ -266,6 +266,31 @@ body a {
   }
 }
 
+@keyframes img-warehouse3 {
+  0%,
+  10% {
+    transform: scale(0.6) translateY(348px) translateX(-30px);
+  }
+  35% {
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
+  }
+  100% {
+    transform: scale(0.2267) translateY(414px) translateX(-30px);
+  }
+}
+
+.warehouse3 {
+  .framed-img {
+    width: 2066px;
+    height: 1548px;
+    img {
+      width: 2066px;
+      animation-name: img-warehouse3;
+      transform: scale(0.2267) translateY(414px) translateX(-30px);
+    }
+  }
+}
+
 
 
 .framed-img {
