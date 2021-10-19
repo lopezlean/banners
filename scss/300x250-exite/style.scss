@@ -189,7 +189,6 @@ body a {
   }
 }
 
-
 @keyframes img-champagne {
   0%,
   10% {
@@ -213,8 +212,6 @@ body a {
     }
   }
 }
-
-
 
 @keyframes img-warehouse {
   0%,
@@ -291,8 +288,6 @@ body a {
   }
 }
 
-
-
 .framed-img {
   width: 1659px;
   height: 1245px;
@@ -310,8 +305,6 @@ body a {
   }
 }
 
-
-
 @keyframes img-retargeting {
   0%,
   10% {
@@ -327,17 +320,42 @@ body a {
   }
 }
 
-@keyframes service-retargeting {
+@keyframes service-retargeting1 {
   0%,
   80% {
     opacity: 0;
     transform: translateY(20%);
   }
 
-  91% {
+  84.88867%,
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+@keyframes service-retargeting2 {
+  0%,
+  80.66667% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  85.55533%,
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service-retargeting3 {
+  0%,
+  81.33333% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  86.222%,
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -420,7 +438,17 @@ body a {
       font-size: 14px;
       line-height: 15.4px;
 
-      animation-name: service-retargeting;
+      &:nth-child(1) {
+        animation-name: service-retargeting1;
+      }
+
+      &:nth-child(2) {
+        animation-name: service-retargeting2;
+      }
+
+      &:nth-child(3) {
+        animation-name: service-retargeting3;
+      }
     }
   }
 }

@@ -8,4 +8,5 @@ taglineSlogan: ""
 service1: "Equity Solutions."
 service2: "Financial Wellness."
 service3: "Retirement Solutions."
+imageAlt: "Two people in a casual office popping champagne with joy and excitement."
 ---
