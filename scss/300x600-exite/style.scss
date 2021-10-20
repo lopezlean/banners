@@ -17,7 +17,7 @@ body {
 
 * {
   box-sizing: border-box;
-  animation-play-state: paused !important;
+  //animation-play-state: paused !important;
 }
 
 .services {
@@ -225,6 +225,7 @@ body a {
 
 .champagne {
   .framed-img {
+    transform: translate(-549px, -798px);
     width: 1099px;
     height: 1597px;
     img {
@@ -271,6 +272,7 @@ body a {
   .framed-img {
     height: 2248px;
     width: 1551px;
+    transform: translate(-775px, -1124px);
     img {
       height: 2248px;
       width: 1551px;
@@ -402,6 +404,7 @@ body a {
   .framed-img {
     height: 2248px;
     width: 1551px;
+    transform: translate(-775px, -1124px);
     img {
       height: 2248px;
       width: 1551px;
