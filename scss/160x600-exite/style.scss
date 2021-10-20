@@ -253,7 +253,7 @@ body a {
     transform: translate(0, 0);
   }
 
-  27% {
+  26% {
     transform: translate(0, -164px);
   }
 
@@ -381,6 +381,22 @@ body a {
     transform: translateY(0%);
   }
 }
+
+@keyframes c-b-retargeting {
+  0%,
+  20% {
+    transform: translate(0, 0);
+  }
+
+  38% {
+    transform: translate(0, -164px);
+  }
+
+  100% {
+    transform: translate(0, -164px);
+  }
+}
+
 .retargeting {
   .framed-img img,
   ul li,
@@ -391,7 +407,9 @@ body a {
     animation-duration: $animation-duration-retargeting;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  .frame-b{
+    animation-name: c-b-retargeting;
+  }
   .framed-img {
     width: 1438px;
     height: 1078px;
