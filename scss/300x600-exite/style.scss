@@ -392,7 +392,7 @@ body a {
   }
 }
 
-@keyframes c-b-retargeting {
+/*@keyframes c-b-retargeting {
   0%,
   30% {
     transform: translate(0, 0);
@@ -405,7 +405,7 @@ body a {
   100% {
     transform: translate(0, -164px);
   }
-}
+}*/
 
 .retargeting {
   .framed-img img,
@@ -419,6 +419,7 @@ body a {
   .tagline {
     animation-name: tagline-retargeting;
   }
+
   .framed-img {
     height: 2248px;
     width: 1551px;
@@ -440,7 +441,7 @@ body a {
     animation-name: textline-retargeting;
   }
   .frame-b {
-    animation: c-b-retargeting $animation-duration-retargeting
+    animation: c-b-warehouse $animation-duration-retargeting
       cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   }
   .services {
