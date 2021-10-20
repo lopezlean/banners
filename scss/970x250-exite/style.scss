@@ -392,31 +392,15 @@ body a {
 
 }
 
-@-webkit-keyframes tagline {
-  0%,
-  40% {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-
-  44.88867%,
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-  }
-}
-
 @keyframes tagline {
   0%,
-  40% {
+  30% {
     opacity: 0;
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
   }
 
-  44.88867%,
+  36%,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
