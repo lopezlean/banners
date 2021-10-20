@@ -247,6 +247,21 @@ body a {
   }
 }
 
+@keyframes c-b-warehouse {
+  0%,
+  10% {
+    transform: translate(0, 0);
+  }
+
+  27% {
+    transform: translate(0, -164px);
+  }
+
+  100% {
+    transform: translate(0, -164px);
+  }
+}
+
 @keyframes img-warehouse {
   0%,
   10% {
@@ -258,6 +273,9 @@ body a {
   }
 }
 .warehouse {
+  .frame-b{
+    animation-name: c-b-warehouse;
+  }
   .framed-img {
     width: 1438px;
     height: 1078px;
