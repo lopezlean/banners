@@ -495,7 +495,7 @@ body a {
 @keyframes img-champagne {
   0%,
   6.66667% {
-    transform: scale(1) translate(-50px, 224px);
+    transform: scale(1) translate(-50px, 266px);
   }
 
   /*16.66667% {
@@ -505,7 +505,7 @@ body a {
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.43) translate(155px, 101px);
+    transform: scale(0.4485) translate(195px, 110px);
   }
 }
 
@@ -515,10 +515,9 @@ body a {
   .framed-img {
     width: 1772px;
     height: 1331px;
-    border: 4px solid red;
     img {
       animation-name: img-champagne;
-      transform: scale(0.43) translate(155px, 101px);
+      transform: scale(0.4485) translate(195px, 101px);
       width: 1772px;
       height: 1331px;
     }
