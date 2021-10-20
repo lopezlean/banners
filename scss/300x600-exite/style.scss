@@ -17,6 +17,7 @@ body {
 
 * {
   box-sizing: border-box;
+  animation-play-state: paused !important;
 }
 
 .services {
@@ -184,11 +185,11 @@ body a {
 @keyframes img {
   0%,
   20% {
-    transform: scale(2.95) translateY(190px) translateX(25px);
+    transform: scale(1) translateY(540px) translateX(77px);
   }
 
   45% {
-    transform: scale(1) translateY(180px) translateX(0px);
+    transform: scale(0.33831) translateY(510px) translateX(0px);
   }
 }
 
@@ -197,34 +198,40 @@ body a {
   left: 50%;
   position: absolute;
   top: 20%;
+  width: 898px;
+  height: 2077px;
   transform: translate(-50%, -50%);
   img {
     animation-timing-function: ease;
     border: 0;
-    height: 100%;
+   //height: 100%;
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(1) translateY(180px) translateX(0px);
+    transform: scale(0.33831) translateY(510px) translateX(0px);
   }
 }
 
 @keyframes img-champagne {
   0%,
   20% {
-    transform: scale(2.65) translateY(138px) translateX(65px);
+    transform: scale(1) translateY(370px) translateX(174px) translateZ(0);
   }
 
   45% {
-    transform: scale(0.75) translateY(135px) translateX(0px);
+    transform: scale(0.273) translateY(359px) translateX(0px) translateZ(0);
   }
 }
 
 .champagne {
   .framed-img {
+    width: 1099px;
+    height: 1597px;
     img {
+      width: 1099px;
+      height: 1597px;
       animation-name: img-champagne;
-      transform: scale(0.75) translateY(135px) translateX(0px);
+      transform: scale(0.273) translateY(359px) translateX(0px) translateZ(0);
     }
   }
 }
@@ -249,52 +256,85 @@ body a {
   }
 }
 
-
 @keyframes img-warehouse {
   0%,
   20% {
-    transform: scale(3.85) translateY(60px) translateX(78px);
+    transform: scale(1) translateY(215px) translateX(290px);
   }
 
   45% {
-    transform: scale(0.75) translateY(125px) translateX(-10px);
+    transform: scale(0.1939) translateY(530px) translateX(0px);
   }
 }
 
 .warehouse {
   .framed-img {
+    height: 2248px;
+    width: 1551px;
     img {
+      height: 2248px;
+      width: 1551px;
       animation-name: img-warehouse;
-      transform: scale(0.75) translateY(125px) translateX(-10px);
+      transform: scale(0.1939) translateY(530px) translateX(0px);
     }
   }
 }
 
-
-
 @keyframes img-retargeting {
   0%,
   20% {
-    transform: scale(3.85) translateY(60px) translateX(78px);
+    transform: scale(1) translateY(215px) translateX(290px);
   }
 
   45% {
-    transform: scale(0.75) translateY(120px) translateX(-10px);
+    transform: scale(0.1939) translateY(530px) translateX(0px);
   }
 }
 
-@keyframes service-retargeting {
+@keyframes service1-retargeting {
   0%,
   80% {
     opacity: 0;
     transform: translateY(20%);
   }
 
-  91%{
+  91% {
     opacity: 1;
     transform: translateY(0%);
   }
-  100%{
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes service2-retargeting {
+  0%,
+  81% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  92% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes service3-retargeting {
+  0%,
+  82% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  92% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
@@ -313,7 +353,7 @@ body a {
     transform: translateY(0);
   }
 
-  80%{
+  80% {
     opacity: 0;
     transform: translateY(20%);
   }
@@ -360,9 +400,13 @@ body a {
     animation-name: tagline-retargeting;
   }
   .framed-img {
+    height: 2248px;
+    width: 1551px;
     img {
+      height: 2248px;
+      width: 1551px;
       animation-name: img-retargeting;
-      transform: scale(0.75) translateY(125px) translateX(-10px);
+      transform: scale(0.1939) translateY(530px) translateX(0px);
     }
   }
   .l1 {
@@ -375,7 +419,8 @@ body a {
     animation-name: textline-retargeting;
   }
   .frame-b {
-    animation: c-b-retargeting $animation-duration-retargeting cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+    animation: c-b-retargeting $animation-duration-retargeting
+      cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   }
   .services {
     list-style-type: none;
@@ -388,7 +433,18 @@ body a {
 
     li {
       font-size: 19px;
-      animation-name: service-retargeting;
+
+      &:nth-child(1) {
+        animation-name: service1-retargeting;
+      }
+
+      &:nth-child(2) {
+        animation-name: service2-retargeting;
+      }
+
+      &:nth-child(3) {
+        animation-name: service3-retargeting;
+      }
     }
   }
 }
