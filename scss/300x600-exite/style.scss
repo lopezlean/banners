@@ -1,7 +1,7 @@
 @import '../fonts';
 @import '../variables';
 
-$animation-duration: 10s;
+$animation-duration: 7s;
 $animation-duration-retargeting: 12s;
 
 html,
@@ -126,7 +126,7 @@ body a {
     transform: translate(0, 0);
   }
 
-  36% {
+  55% {
     transform: translate(0, -164px);
   }
 
@@ -153,12 +153,12 @@ body a {
 
 @keyframes tagline {
   0%,
-  45% {
+  65% {
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(10px);
   }
 
-  50% {
+  80% {
     opacity: 1;
     transform: translateY(0%);
   }
@@ -166,12 +166,12 @@ body a {
 
 @keyframes textline1 {
   0%,
-  35% {
+  50% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-10px);
   }
 
-  45% {
+  60% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -184,11 +184,11 @@ body a {
 
 @keyframes img {
   0%,
-  20% {
+  10% {
     transform: scale(1) translateY(540px) translateX(77px);
   }
 
-  45% {
+  35% {
     transform: scale(0.33831) translateY(510px) translateX(0px);
   }
 }
