@@ -149,7 +149,6 @@ body a {
   left: -100%;
   top: 100%;
   width: 300%;
-  animation-delay: 1.5s;
 }
 
 @keyframes tagline {
@@ -244,11 +243,11 @@ body a {
 }
 @keyframes c-b-champagne {
   0%,
-  20% {
+  35% {
     transform: translate(0, 0);
   }
 
-  30% {
+  50% {
     transform: translate(0, -164px);
   }
 
@@ -406,8 +405,10 @@ body a {
     transform: scale(1) translateY(215px) translateX(290px);
   }
 
-  35% {
-    transform: scale(0.1939) translateY(505px) translateX(0px);
+  35%,
+  100%{
+    transform: scale(0.1939) translateY(507px) translateX(0px);
+
   }
 }
 
@@ -528,7 +529,7 @@ body a {
       height: 2248px;
       width: 1551px;
       animation-name: img-retargeting;
-      transform: scale(0.1939) translateY(530px) translateX(0px);
+      transform: scale(0.1939) translateY(507px) translateX(0px);
     }
   }
   .l1 {
