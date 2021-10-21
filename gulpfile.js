@@ -9,6 +9,25 @@ var glob = require("glob")
 var path = require('path');
 
 
+const imagesResizer = require('gulp-images-resizer');
+const imagemin = require('gulp-imagemin');
+const rename = require('gulp-rename');
+
+const {
+  awaitStream,
+  bytesToKB,
+  getDirectories,
+  getLastGitBranch,
+  getLastGitCommitHash,
+} = require('./scripts/lib');
+
+
+
+const sourceDir = 'src/';
+const zipName = 'Morgan_StanleyatWork_Banners';
+// Base directory
+const outputDir = 'build/';
+const imagesSrc = `./build/**/*.jpg`;
 
 
 // const uglify = require('gulp-uglify');
@@ -296,6 +315,111 @@ gulp.task("watch", function () {
   gulp.watch(["html/**/*.md"], gulp.series("jekyll-rebuild","sass"));
 
 });
+
+
+
+
+
+
+
+/******************************************
+ * Copy and Resize Images (JPG)
+ ******************************************/
+
+ const copyAndResizeImages = () => {
+  return Promise.all(
+    [
+      { scale: '50%', suffix: '' },
+      { scale: '100%', suffix: '@2x' },
+    ].map(({ scale, suffix }) =>
+      awaitStream(
+        gulp.src(imagesSrc)
+          .pipe(
+            rename((path) =>
+              Object.assign({}, path, { basename: path.basename + suffix })
+            )
+          )
+          .pipe(
+            imagesResizer({
+              format: 'jpg',
+              width: scale,
+              quality: 100,
+            })
+          )
+          .pipe(gulp.dest(outputDir))
+      )
+    )
+  );
+};
+
+/******************************************
+ * Optimize/Compress Images (JPG)
+ ******************************************/
+
+// default jpeg compression quality settings [1x resolution, 2x resolution]
+const DEFAULT_QUALITIES = [85, 65];
+
+// compression quality settings specific to certain banners
+const QUALITY_SETTINGS = {
+  'CT~BAN_CS~970x250_YR~20_CV~Morgan_StanleyatWork_Wings': [80, 40],
+};
+
+const optimizeImages = async () => {
+  const bannerPaths = await getDirectories(`${outputDir}${pages}`);
+  const defaultSettingsBanners = bannerPaths.filter(
+    (x) => !QUALITY_SETTINGS[x]
+  );
+
+  const settings = [
+    ...defaultSettingsBanners.map((key) => [key, DEFAULT_QUALITIES]),
+    ...Object.entries(QUALITY_SETTINGS),
+  ];
+
+  for (const [banner, qualities] of settings) {
+    const paths = [
+      [`${outputDir}${pages}${banner}/*.jpg`, '!**/*@2x.jpg'],
+      [`${outputDir}${pages}${banner}/*@2x.jpg`],
+    ];
+
+    for (const index in paths) {
+      const path = paths[index];
+      const quality = qualities[index];
+
+      console.log(
+        `Optimizing images for ${banner} (${['1x', '2x'][index]} @ ${quality}%)`
+      );
+
+      await awaitStream(
+        gulp.src(path)
+          .pipe(
+            imagemin([
+              imagemin.mozjpeg({
+                progressive: true,
+                quality,
+              }),
+            ])
+          )
+          .pipe(gulp.dest(`${outputDir}${pages}${banner}/`))
+      );
+    }
+  }
+};
+
+
+function createBuildDirectory(){
+  return gulp.src(['site/**/*']).pipe(gulp.dest('build/'));
+}
+
+function resizeImages(cb){
+  copyAndResizeImages();
+  optimizeImages();
+  cb();
+}
+
+gulp.task(
+  "build-project",
+  gulp.series(createBuildDirectory,resizeImages)
+);
 
 /**
  * Default task, running just `gulp` will compile the sass,
