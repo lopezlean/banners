@@ -1,6 +1,8 @@
 @import '../fonts';
 @import '../variables';
 
+$animation-duration: 14s;
+
 html,
 body {
   color: $color;
@@ -28,8 +30,8 @@ ul {
   line-height: 24px;
   margin: 0;
 }
-ul{
-  li{
+ul {
+  li {
     font-size: 21px;
     line-height: 23px;
   }
@@ -104,8 +106,8 @@ body a {
 .services li {
   -webkit-animation-direction: forwards;
   animation-direction: forwards;
-  -webkit-animation-duration: 12s;
-  animation-duration: 12s;
+  -webkit-animation-duration: $animation-duration;
+  animation-duration: $animation-duration;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -183,8 +185,6 @@ body a {
   width: 100%;
 }
 
-
-
 @keyframes c-t {
   0%,
   6.66667% {
@@ -210,8 +210,6 @@ body a {
   }
 }
 
-
-
 @keyframes c-r {
   0%,
   6.66667% {
@@ -236,8 +234,6 @@ body a {
     transform: translate(-24px, 0);
   }
 }
-
-
 
 @keyframes c-b {
   0%,
@@ -270,8 +266,6 @@ body a {
     transform: translate(0, 0);
   }
 
-  
-
   25.33333%,
   53.33333% {
     -webkit-transform: translate(300px, 0);
@@ -294,32 +288,36 @@ body a {
 }
 
 .frame-t {
-  -webkit-animation: c-t 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
-  animation: c-t 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  -webkit-animation: c-t $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1
+    forwards;
+  animation: c-t $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   left: -100%;
   top: -100%;
   width: 300%;
 }
 
 .frame-r {
-  -webkit-animation: c-r 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
-  animation: c-r 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  -webkit-animation: c-r $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1
+    forwards;
+  animation: c-r $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   height: 300%;
   left: 100%;
   top: -100%;
 }
 
 .frame-b {
-  -webkit-animation: c-b 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
-  animation: c-b 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  -webkit-animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1
+    forwards;
+  animation: c-b $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   left: -100%;
   top: 100%;
   width: 300%;
 }
 
 .frame-l {
-  -webkit-animation: c-l 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
-  animation: c-l 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  -webkit-animation: c-l $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1
+    forwards;
+  animation: c-l $animation-duration cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   height: 300%;
   left: -105%;
   top: -100%;
@@ -342,35 +340,33 @@ body a {
 }
 
 @keyframes service2 {
-
   0%,
   59.33333% {
     opacity: 0;
     -webkit-transform: translateY(20%);
-    transform: translateY(20%)
+    transform: translateY(20%);
   }
 
   64.222%,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%)
+    transform: translateY(0%);
   }
 }
 @keyframes service3 {
-
   0%,
   60% {
     opacity: 0;
     -webkit-transform: translateY(20%);
-    transform: translateY(20%)
+    transform: translateY(20%);
   }
 
   64.88867%,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%)
+    transform: translateY(0%);
   }
 }
 
@@ -387,8 +383,6 @@ body a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
-
 }
 
 @keyframes tagline {
@@ -413,7 +407,7 @@ body a {
     transform: scale(1) translate(-444px, 450px);
   }
 
-/*  16.66667% {
+  /*  16.66667% {
     transform: scale(0.50) translate(-244px, 450px);
   } */
 
@@ -462,22 +456,17 @@ body a {
   }*/
 
   25.33333%,
-  53.33333%
-  {
+  53.33333% {
     transform: scale(0.315) translate(290px, 221px);
   }
 
   63.55533%,
-  100%
-  {
+  100% {
     transform: scale(0.29) translate(380px, 237px);
   }
 }
 
-
-.warehouse{
-  
-  
+.warehouse {
   .framed-img {
     width: 3000px;
     height: 1428px;
@@ -489,7 +478,6 @@ body a {
     }
   }
 }
-
 
 @keyframes img-champagne {
   0%,
@@ -507,8 +495,6 @@ body a {
     transform: scale(0.4485) translate(195px, 110px);
   }
 }
-
-
 
 @keyframes c-l-champagne {
   0%,
@@ -529,10 +515,9 @@ body a {
   }
 }
 
-.champagne{
-  
-  .frame-l{
-    animation-name:  c-l-champagne;
+.champagne {
+  .frame-l {
+    animation-name: c-l-champagne;
   }
   .framed-img {
     width: 1772px;
@@ -545,8 +530,6 @@ body a {
     }
   }
 }
-
-
 
 @keyframes textline-retargeting {
   0%,
@@ -569,9 +552,7 @@ body a {
     transform: translateY(-50%);
   }
 }
-.retargeting{
-  
-  
+.retargeting {
   .framed-img {
     width: 3000px;
     height: 1428px;
@@ -590,11 +571,11 @@ body a {
   .l1 {
     animation-name: textline-retargeting;
   }
-  
+
   .l2 {
     animation-name: textline-retargeting;
   }
-  
+
   .l3 {
     animation-name: textline-retargeting;
   }
