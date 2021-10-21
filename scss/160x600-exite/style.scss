@@ -224,6 +224,22 @@ body a {
   }
 }
 
+@keyframes c-b-champagne {
+  0%,
+  10% {
+    transform: translate(0, 0);
+  }
+
+  26% {
+    transform: translate(0, -164px);
+  }
+
+  100% {
+    transform: translate(0, -164px);
+  }
+}
+
+
 @keyframes img-champagne {
   0%,
   10% {
@@ -235,6 +251,9 @@ body a {
   }
 }
 .champagne {
+  .frame-b{
+    animation-name: c-b-champagne;
+  }
   .framed-img {
     width: 1266px;
     height: 951px;
