@@ -239,6 +239,41 @@ body a {
   }
 }
 
+@keyframes textline1-champagne {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  31% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@keyframes tagline-champagne {
+  0%,
+  35% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 @keyframes img-champagne {
   0%,
@@ -251,7 +286,20 @@ body a {
   }
 }
 .champagne {
-  .frame-b{
+  .tagline{
+    animation-name: tagline-champagne;
+  }
+  .l1 {
+    animation-name: textline1-champagne;
+  }
+
+  .l2 {
+    animation-name: textline1-champagne;
+  }
+  .l3 {
+    animation-name: textline1-champagne;
+  }
+  .frame-b {
     animation-name: c-b-champagne;
   }
   .framed-img {
@@ -292,7 +340,7 @@ body a {
   }
 }
 .warehouse {
-  .frame-b{
+  .frame-b {
     animation-name: c-b-warehouse;
   }
   .framed-img {
@@ -426,7 +474,7 @@ body a {
     animation-duration: $animation-duration-retargeting;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-  .frame-b{
+  .frame-b {
     animation-name: c-b-retargeting;
   }
   .framed-img {
