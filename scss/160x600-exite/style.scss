@@ -329,6 +329,43 @@ body a {
   }
 }
 
+
+@keyframes textline1-warehouse {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  31% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@keyframes tagline-warehouse {
+  0%,
+  35% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes img-warehouse {
   0%,
   10% {
@@ -342,6 +379,12 @@ body a {
 .warehouse {
   .frame-b {
     animation-name: c-b-warehouse;
+  }
+  .tagline {
+    animation-name: tagline-warehouse;
+  }
+  .l1,.l2,.l3{
+    animation-name: textline1-warehouse;
   }
   .framed-img {
     width: 1438px;
