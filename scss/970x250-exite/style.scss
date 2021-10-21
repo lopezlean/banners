@@ -467,7 +467,7 @@ body a {
     transform: scale(0.315) translate(290px, 221px);
   }
 
-  58.222%,
+  63.55533%,
   100%
   {
     transform: scale(0.29) translate(380px, 237px);
@@ -508,9 +508,32 @@ body a {
   }
 }
 
+
+
+@keyframes c-l-champagne {
+  0%,
+  6.66667% {
+    transform: translate(0, 0);
+  }
+
+  26.33333%,
+  53.33333% {
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+
+  60%,
+  100% {
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+}
+
 .champagne{
   
-  
+  .frame-l{
+    animation-name:  c-l-champagne;
+  }
   .framed-img {
     width: 1772px;
     height: 1331px;
