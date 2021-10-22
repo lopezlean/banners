@@ -12,7 +12,8 @@ var path = require('path');
 const imagesResizer = require('gulp-images-resizer');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
-
+const { join, resolve } = require('path');
+const fs = require('fs');
 const {
   awaitStream,
   bytesToKB,
@@ -23,11 +24,13 @@ const {
 
 
 
-const sourceDir = 'src/';
+const sourceDir = 'html/';
 const zipName = 'Morgan_StanleyatWork_Banners';
 // Base directory
-const outputDir = 'build/';
-const imagesSrc = `./build/**/*.jpg`;
+const outputDir = 'site/';
+const imagesSrc = `./html/_collections/**/*.jpg`;
+// Pages
+const pages = '';
 
 
 // const uglify = require('gulp-uglify');
@@ -327,6 +330,8 @@ gulp.task("watch", function () {
  ******************************************/
 
  const copyAndResizeImages = () => {
+   console.log({outputDir});
+   console.log({imagesSrc});
   return Promise.all(
     [
       { scale: '50%', suffix: '' },
@@ -361,7 +366,8 @@ const DEFAULT_QUALITIES = [85, 65];
 
 // compression quality settings specific to certain banners
 const QUALITY_SETTINGS = {
-  'CT~BAN_CS~970x250_YR~20_CV~Morgan_StanleyatWork_Wings': [80, 40],
+  '970x250': [80, 40],
+  '970x250-exite': [80, 40]
 };
 
 const optimizeImages = async () => {
@@ -369,7 +375,8 @@ const optimizeImages = async () => {
   const defaultSettingsBanners = bannerPaths.filter(
     (x) => !QUALITY_SETTINGS[x]
   );
-
+  console.log({bannerPaths});
+  console.log({defaultSettingsBanners});
   const settings = [
     ...defaultSettingsBanners.map((key) => [key, DEFAULT_QUALITIES]),
     ...Object.entries(QUALITY_SETTINGS),
@@ -380,15 +387,14 @@ const optimizeImages = async () => {
       [`${outputDir}${pages}${banner}/*.jpg`, '!**/*@2x.jpg'],
       [`${outputDir}${pages}${banner}/*@2x.jpg`],
     ];
-
     for (const index in paths) {
       const path = paths[index];
       const quality = qualities[index];
 
       console.log(
-        `Optimizing images for ${banner} (${['1x', '2x'][index]} @ ${quality}%)`
+        `Optimizing images for ${banner} ${path} (${['1x', '2x'][index]} @ ${quality}%)`
       );
-
+      try {
       await awaitStream(
         gulp.src(path)
           .pipe(
@@ -401,6 +407,9 @@ const optimizeImages = async () => {
           )
           .pipe(gulp.dest(`${outputDir}${pages}${banner}/`))
       );
+      } catch(e){
+        console.log({e});
+      }
     }
   }
 };
@@ -416,9 +425,61 @@ function resizeImages(cb){
   cb();
 }
 
+
 gulp.task(
   "build-project",
-  gulp.series(createBuildDirectory,resizeImages)
+  gulp.series(resizeImages)
+);
+
+const filesizes = async (done) => {
+  const buildPagesBase = `${outputDir}${pages}`;
+  const bannerPaths = await getDirectories(buildPagesBase);
+
+  const sizes = bannerPaths.map((path) => {
+    const basePath = resolve(__dirname, `${buildPagesBase}${path}`);
+    const htmlSize = fs.statSync(`${basePath}/index.html`).size;
+    const cssSize = fs.statSync(`${basePath}/style.css`).size;
+    const largestFontSize = fs.statSync(
+      `${basePath}/shared/fonts/MSGloriolaIIStd.woff`
+    ).size;
+
+    let largestImageSize = 0;
+    try {
+      largestImageSize = Math.max(
+        fs.statSync(`${basePath}/img@2x.jpg`).size,
+        fs.statSync(`${basePath}/img.jpg`).size
+      );
+    } catch (e) {
+      // FIXME: should fail if an image is expected to be found
+    }
+
+    return htmlSize + cssSize + largestFontSize + largestImageSize;
+  });
+
+  console.log('Worst-case scenario initial payload sizes:');
+
+  bannerPaths.forEach((path, index) => {
+    const size = sizes[index];
+    const oversize = size > FILESIZE_LIMIT;
+    console.log(
+      chalk[oversize ? 'red' : 'green']`${path.padEnd(64)} = ${bytesToKB(
+        sizes[index]
+      )}`
+    );
+  });
+
+  if (sizes.some((size) => size > FILESIZE_LIMIT)) {
+    throw new Error(
+      `Some banners are over the ${bytesToKB(FILESIZE_LIMIT)} size limit.`
+    );
+  }
+
+  done();
+};
+
+gulp.task(
+  "filesizes",
+  gulp.series(filesizes)
 );
 
 /**
