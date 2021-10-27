@@ -1,5 +1,6 @@
 ---
 layout: "600x300"
+bodyClass: "equity-solutions"
 l1: "Create a workforce that’s"
 l2: "truly invested."
 l3: ""

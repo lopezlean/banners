@@ -1,5 +1,6 @@
 ---
 layout: "600x300"
+bodyClass: "equity-solutions"
 l1: "Help employees get the"
 l2: "the most from their equity"
 l3: "compensation."

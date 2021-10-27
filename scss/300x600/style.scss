@@ -444,3 +444,29 @@ body a {
   animation-name: img;
   transform: scale(0.72) translate(15px, -132px);
 }
+
+
+@keyframes img-equity-solutions {
+
+  0%,
+  6.66667% {
+    transform: scale(1) translate(15px, 0);
+  }
+
+  16.66667% {
+    transform: scale(0.92) translate(15px, 0);
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.70) translate(0px, -132px);
+  }
+}
+
+.equity-solutions{
+  .framed-img img {
+    animation-name: img-equity-solutions;
+    transform: scale(0.70) translate(0px, -132px);
+  }
+}
