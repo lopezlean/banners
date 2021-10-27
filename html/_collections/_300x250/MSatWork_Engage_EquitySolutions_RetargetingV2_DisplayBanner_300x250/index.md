@@ -1,5 +1,6 @@
 ---
 layout: "300x250"
+bodyClass: "equity-solutions"
 l1: "Create a workforce that’s truly"
 l2: "invested."
 taglineTitle: "Morgan Stanley at Work"

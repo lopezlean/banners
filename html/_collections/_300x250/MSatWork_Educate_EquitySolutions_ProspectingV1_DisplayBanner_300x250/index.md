@@ -1,5 +1,6 @@
 ---
 layout: "300x250"
+bodyClass: "equity-solutions"
 l1: "Help employees get the most from"
 l2: "their equity compensation."
 taglineTitle: "Morgan Stanley at Work"

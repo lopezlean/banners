@@ -145,6 +145,7 @@ body a {
 
 .framed-img {
   height: 100%;
+  width: 417px;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -443,5 +444,35 @@ body a {
 .financial-wellness{
   .framed-img img {
     animation-name: financial-wellness-img;
+  }
+}
+
+
+
+@keyframes img {
+  0%,
+  6.66667% {
+    transform: scale(1) translateY(217px);
+  }
+  16.66667% {
+    transform: scale(0.42) translateY(100px);
+  }
+  25.33333%,
+  72% {
+    transform: scale(0.241) translateY(-60px) translateX(10px);
+  }
+  83.33333%,
+  100% {
+    transform: scale(0.22) translateY(-105px);
+  }
+}
+
+.equity-solutions{
+  .framed-img{
+    width: 1084px;
+    height: 754px;
+  }
+  .framed-img img {
+    transform: scale(0.241) translateY(-105px);
   }
 }
