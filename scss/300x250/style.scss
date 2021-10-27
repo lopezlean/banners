@@ -506,3 +506,31 @@ body a {
     animation-name: img-financial-empowerment;
   }
 }
+
+@keyframes img-retirement-solutions {
+  0%,
+  6.66667% {
+    transform: scale(1) translateY(150px) translateX(0px);
+  }
+  16.66667% {
+    transform: scale(0.321175278622087) translateY(155px) translateX(0px);
+  }
+  25.33333%,
+  72% {
+    transform: scale(0.191489361702128) translateY(-180px) translateX(0px);
+  }
+  83.33333%,
+  100% {
+    transform: scale(0.191489361702128) translateY(-105px);
+  }
+}
+.retirement-solutions{
+  .framed-img{
+    width: 1418px;
+    height: 987px;
+  }
+  .framed-img img {
+    transform: scale(0.241) translateY(-105px);
+    animation-name: img-retirement-solutions;
+  }
+}

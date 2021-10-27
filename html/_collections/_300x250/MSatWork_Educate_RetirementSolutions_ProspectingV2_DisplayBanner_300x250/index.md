@@ -1,5 +1,6 @@
 ---
 layout: "300x250"
+bodyClass: "retirement-solutions"
 l1: "Take care of tomorrow so your"
 l2: "employees can focus on today."
 taglineTitle: "Morgan Stanley at Work"
