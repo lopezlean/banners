@@ -773,3 +773,33 @@ body a {
     }
   }
 }
+
+
+@keyframes img-financial-empowerment {
+
+  0%,
+  6.66667% {
+    transform: scale(1) translate(20px, 120px)
+  }
+
+  16.66667% {
+    transform: scale(0.637385804638089) translate(20px, 120px)
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.319044272663387) translate(424px, -10px);
+  }
+}
+
+.financial-empowerment{
+  .framed-img{
+    width: 2044px;
+    height: 659px;
+    img{
+      animation-name: img-financial-empowerment;
+      transform: scale(0.319044272663387) translate(424px, -10px);
+    }
+  }
+}
