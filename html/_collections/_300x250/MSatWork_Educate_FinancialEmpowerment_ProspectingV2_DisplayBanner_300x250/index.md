@@ -1,5 +1,6 @@
 ---
 layout: "300x250"
+bodyClass: "financial-empowerment"
 l1: "Empower your employees to"
 l2: "achieve their life goals."
 taglineTitle: "Morgan Stanley at Work"
