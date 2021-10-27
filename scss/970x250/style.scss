@@ -13,7 +13,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .services {
@@ -716,27 +716,6 @@ body a {
   }
 }
 
-@-webkit-keyframes img {
-
-  0%,
-  6.66667% {
-    -webkit-transform: scale(1) translate(0, 0);
-    transform: scale(1) translate(0, 0)
-  }
-
-  16.66667% {
-    -webkit-transform: scale(0.95) translate(0, 0);
-    transform: scale(0.95) translate(0, 0)
-  }
-
-  25.33333%,
-  53.33333%,
-  100% {
-    -webkit-transform: scale(0.78) translate(174px, -3px);
-    transform: scale(0.78) translate(174px, -3px)
-  }
-}
-
 @keyframes img {
 
   0%,
@@ -764,4 +743,33 @@ body a {
   -webkit-transform: scale(0.78) translate(174px, -3px);
   -ms-transform: scale(0.78) translate(174px, -3px);
   transform: scale(0.78) translate(174px, -3px)
+}
+
+@keyframes img-equity-solutions {
+
+  0%,
+  6.66667% {
+    transform: scale(1) translate(20px, 240px)
+  }
+
+  16.66667% {
+    transform: scale(0.632982456140351) translate(0, 240px)
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.3186) translate(424px, 70px);
+  }
+}
+
+.equity-solutions{
+  .framed-img{
+    width: 2048px;
+    height: 887px;
+    img{
+      animation-name: img-equity-solutions;
+      transform: scale(0.3186) translate(424px, 70px);
+    }
+  }
 }
