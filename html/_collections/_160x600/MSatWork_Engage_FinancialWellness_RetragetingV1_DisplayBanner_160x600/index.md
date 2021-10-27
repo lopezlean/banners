@@ -1,5 +1,6 @@
 ---
 layout: "160x600"
+bodyClass: "wellness"
 l1: "Replace your"
 l2: "employees’ debt"
 l3: "with financial"
