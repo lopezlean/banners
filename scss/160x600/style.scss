@@ -485,3 +485,36 @@ body a {
 
   }
 }
+
+
+
+@keyframes img-equity-solutions {
+  0%,
+  6.66667% {
+    transform: scale(1) translate(5px,90px);
+  }
+
+  16.66667% {
+    transform: scale(0.655913978494624) translate(0px, 90px);
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.385304659498208) translate(0px, -242px);
+  }
+}
+
+.equity-solutions{
+  .framed-img {
+    width: 300px;
+    height: 1038px;
+    img {
+      width: 300px;
+      height: 1038px;
+      animation-name: img-equity-solutions;
+      transform: scale(0.385304659498208) translate(0px, -242px)
+    }
+
+  }
+}
