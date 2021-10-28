@@ -188,31 +188,6 @@ body a {
   width: 100%
 }
 
-@-webkit-keyframes c-t {
-
-  0%,
-  6.66667% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0)
-  }
-
-  16.66667% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
-  }
-
-  25.33333%,
-  53.33333% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
-  }
-
-  60%,
-  100% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
-  }
-}
 
 @keyframes c-t {
 
@@ -800,6 +775,37 @@ body a {
     img{
       animation-name: img-financial-empowerment;
       transform: scale(0.319044272663387) translate(424px, -10px);
+    }
+  }
+}
+
+
+
+@keyframes img-retirement-solutions {
+
+  0%,
+  6.66667% {
+    transform: scale(1) translate(0px, 120px)
+  }
+
+  16.66667% {
+    transform: scale(0.636158192090395) translate(0px, 120px)
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.51638418079096) translate(279px, 0px);
+  }
+}
+
+.retirement-solutions{
+  .framed-img{
+    width: 1274px;
+    height: 503px;
+    img{
+      animation-name: img-retirement-solutions;
+      transform: scale(0.51638418079096) translate(279px, 0);
     }
   }
 }
