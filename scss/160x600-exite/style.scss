@@ -126,11 +126,11 @@ body a {
 
 @keyframes c-b {
   0%,
-  30% {
+  15% {
     transform: translate(0, 0);
   }
 
-  55% {
+  29% {
     transform: translate(0, -164px);
   }
 
@@ -157,12 +157,12 @@ body a {
 
 @keyframes tagline {
   0%,
-  65% {
+  45% {
     opacity: 0;
     transform: translateY(10px);
   }
 
-  80% {
+  55% {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -174,12 +174,12 @@ body a {
 
 @keyframes textline1 {
   0%,
-  50% {
+  33% {
     opacity: 0;
     transform: translateY(-10px);
   }
 
-  60% {
+  42% {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -193,14 +193,15 @@ body a {
 @keyframes img {
   0%,
   10% {
-    transform: scale(1) translateY(280px) translateX(-320px);
+    transform: scale(1) translateY(98px) translateX(80px);
   }
+
   35% {
-    transform: scale(0.5) translateY(280px) translateX(-350px);
+    transform: scale(0.465) translateY(210px) translateX(-30px);
   }
 
   100% {
-    transform: scale(0.5) translateY(280px) translateX(-350px);
+    transform: scale(0.465) translateY(210px) translateX(-30px);
   }
 }
 
@@ -209,18 +210,18 @@ body a {
   position: absolute;
   top: 20%;
   transform: translate(-50%, -50%);
-  width: 2049px;
-  height: 1537px;
+  width: 1266px;
+  height: 951px;
   img {
-    width: 2049px;
-    height: 1537px;
+    width: 1266px;
+    height: 951px;
     animation-timing-function: ease;
     border: 0;
 
     animation-name: img;
     animation-duration: $animation-duration;
     animation-iteration-count: $iteration-count;
-    transform: scale(0.5) translateY(280px) translateX(-350px);
+    transform: scale(0.465) translateY(210px) translateX(-30px);
   }
 }
 
@@ -498,7 +499,7 @@ body a {
     transform: translate(0, 0);
   }
 
-  38% {
+  34% {
     transform: translate(0, -164px);
   }
 
@@ -521,11 +522,11 @@ body a {
     animation-name: c-b-retargeting;
   }
   .framed-img {
-    width: 1438px;
-    height: 1078px;
+    width: 1266px;
+    height: 951px;
     img {
-      width: 1438px;
-      height: 1078px;
+      width: 1266px;
+      height: 951px;
       animation-name: img-retargeting;
       transform: scale(0.465) translateY(210px) translateX(-30px);
     }
@@ -540,6 +541,83 @@ body a {
 
   .tagline {
     animation-name: tagline-retargeting;
+  }
+
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 436px;
+    padding-top: 16px;
+    margin-left: 20px;
+
+    li {
+      font-size: 13px;
+      line-height: 15px;
+
+      &:nth-child(1) {
+        animation-name: service1-retargeting;
+      }
+
+      &:nth-child(2) {
+        animation-name: service2-retargeting;
+      }
+
+      &:nth-child(3) {
+        animation-name: service3-retargeting;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes img-champagne-retargeting {
+  0%,
+  10% {
+    transform: scale(1) translateY(176px) translateX(-37px);
+  }
+
+  25% {
+    transform: scale(0.5) translateY(175px) translateX(-30px);
+  }
+}
+
+.champagne-retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .l3,
+  .tagline {
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .frame-b {
+    animation-name: c-b-retargeting;
+  }
+  .framed-img {
+    width: 1438px;
+    height: 1078px;
+    img {
+      width: 1438px;
+      height: 1078px;
+      animation-name: img-champagne-retargeting;
+      transform: scale(0.5) translateY(175px) translateX(-30px);
+    }
+  }
+
+  .l1,
+  .l2,
+  .l3 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .tagline {
+    animation-name:  tagline-retargeting;
   }
 
   .services {
