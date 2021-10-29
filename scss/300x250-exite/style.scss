@@ -453,3 +453,153 @@ body a {
     }
   }
 }
+
+
+@keyframes img-bluechip-retargeting {
+  0%,
+  10% {
+    transform: scale(1) translateY(385px) translateX(-275px);
+  }
+  30% {
+    transform: scale(0.31111) translateY(355px) translateX(-280px);
+  }
+  100% {
+    transform: scale(0.31111) translateY(355px) translateX(-280px);
+  }
+}
+
+.bluechip-retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-direction: forwards;
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+
+  .framed-img {
+    width: 1659px;
+    height: 1245px;
+    img {
+      width: 1659px;
+      animation-name: img-bluechip-retargeting;
+      transform: scale(0.31111) translateY(355px) translateX(-280px);
+    }
+  }
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 133px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 14px;
+      line-height: 15.4px;
+
+      &:nth-child(1) {
+        animation-name: service-retargeting1;
+      }
+
+      &:nth-child(2) {
+        animation-name: service-retargeting2;
+      }
+
+      &:nth-child(3) {
+        animation-name: service-retargeting3;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes img-champagne-retargeting {
+  0%,
+  10% {
+    transform: scale(1) translateY(210px) translateX(-10px);
+  }
+  30% {
+    transform: scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+  100% {
+    transform: scale(0.441666666666667) translateY(220px) translateX(-20px);
+  }
+}
+
+.champagne-retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-direction: forwards;
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+
+  .framed-img {
+    width: 958px;
+    height: 719px;
+    img {
+      width: 958px;
+      animation-name: img-champagne-retargeting;
+      transform: scale(0.31111) translateY(355px) translateX(-280px);
+    }
+  }
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 133px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 14px;
+      line-height: 15.4px;
+
+      &:nth-child(1) {
+        animation-name: service-retargeting1;
+      }
+
+      &:nth-child(2) {
+        animation-name: service-retargeting2;
+      }
+
+      &:nth-child(3) {
+        animation-name: service-retargeting3;
+      }
+    }
+  }
+}

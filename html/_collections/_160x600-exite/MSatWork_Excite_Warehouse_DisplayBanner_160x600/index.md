@@ -9,4 +9,5 @@ taglineSlogan: ""
 service1: "See what our"
 service2: "Retirement Solutions"
 service3: "can do."
+imageAlt: "Two people in a casual office popping champagne with joy and excitement."
 ---

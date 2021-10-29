@@ -1,9 +1,8 @@
 ---
-layout: "160x600-exite"
+layout: "300x250-exite"
 bodyClass: "champagne-retargeting"
-l1: "When employees"
-l2: " win, companies"
-l3: "can too."
+l1: "When employees win,"
+l2: "companies can too."
 taglineTitle: "Morgan Stanley at Work"
 taglineSlogan: ""
 service1: "Equity Solutions."

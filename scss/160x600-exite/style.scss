@@ -650,7 +650,7 @@ body a {
 
 
 
-@keyframes img-bluechimp-retargeting {
+@keyframes img-bluechip-retargeting {
   0%,
   10% {
     transform: scale(1) translateY(280px) translateX(-320px);
@@ -665,7 +665,7 @@ body a {
 }
 
 
-.bluechimp-retargeting {
+.bluechip-retargeting {
   .framed-img img,
   ul li,
   .l1,
@@ -684,7 +684,7 @@ body a {
     img {
       width: 2049px;
       height: 1537px;
-      animation-name: img-bluechimp-retargeting;
+      animation-name: img-bluechip-retargeting;
       transform: scale(0.5) translateY(280px) translateX(-350px);
     }
   }

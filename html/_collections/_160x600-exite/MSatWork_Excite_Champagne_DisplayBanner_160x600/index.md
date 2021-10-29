@@ -9,4 +9,5 @@ taglineSlogan: ""
 service1: "See what our"
 service2: "Retirement Solutions"
 service3: "can do."
+imageAlt: "Cheering woman hoisted up on two men’s shoulders in a warehouse."
 ---
