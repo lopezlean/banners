@@ -571,3 +571,152 @@ body a {
     }
   }
 }
+
+
+@keyframes img-bluechip-retargeting {
+  0%,
+  10% {
+    transform: scale(1) translateY(540px) translateX(77px);
+  }
+
+  30% {
+    transform: scale(0.33831) translateY(510px) translateX(0px);
+  }
+}
+
+.bluechip-retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+
+  .framed-img {
+    width: 898px;
+    height: 2077px;
+    transform: translate(-50%, -50%);
+    img {
+      animation-name: img-bluechip-retargeting;
+      transform: scale(0.33831) translateY(510px) translateX(0px);
+    }
+  }
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .frame-b {
+    animation: c-b-warehouse $animation-duration-retargeting
+      cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 436px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 19px;
+
+      &:nth-child(1) {
+        animation-name: service1-retargeting;
+      }
+
+      &:nth-child(2) {
+        animation-name: service2-retargeting;
+      }
+
+      &:nth-child(3) {
+        animation-name: service3-retargeting;
+      }
+    }
+  }
+}
+
+@keyframes img-champagne-retargeting {
+  0%,
+  10% {
+    transform: scale(1) translateY(370px) translateX(174px) translateZ(0);
+  }
+
+  30% {
+    transform: scale(0.273) translateY(359px) translateX(0px) translateZ(0);
+  }
+}
+
+
+
+.champagne-retargeting {
+  .framed-img img,
+  ul li,
+  .l1,
+  .l2,
+  .tagline {
+    animation-duration: $animation-duration-retargeting;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .tagline {
+    animation-name: tagline-retargeting;
+  }
+
+  .framed-img {
+    width: 898px;
+    height: 2077px;
+    transform: translate(-50%, -50%);
+    img {
+      animation-name: img-champagne-retargeting;
+      transform: scale(0.273) translateY(359px) translateX(0px) translateZ(0);
+    }
+  }
+  .l1 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+
+  .l2 {
+    opacity: 0;
+    animation-name: textline-retargeting;
+  }
+  .frame-b {
+    animation: c-b-warehouse $animation-duration-retargeting
+      cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+  }
+  .services {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 436px;
+    padding-top: 12px;
+    margin-left: 20px;
+
+    li {
+      font-size: 19px;
+
+      &:nth-child(1) {
+        animation-name: service1-retargeting;
+      }
+
+      &:nth-child(2) {
+        animation-name: service2-retargeting;
+      }
+
+      &:nth-child(3) {
+        animation-name: service3-retargeting;
+      }
+    }
+  }
+}
