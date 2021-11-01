@@ -426,11 +426,11 @@ body a {
   }
   25.33333%,
   72% {
-    transform: scale(0.72) translateY(-35px);
+    transform: scale(0.626629213483146) translateY(-35px);
   }
   83.33333%,
   100% {
-    transform: scale(0.72) translateY(-105px);
+    transform: scale(0.626629213483146) translateY(-105px);
   }
 }
 
@@ -444,6 +444,7 @@ body a {
 .financial-wellness{
   .framed-img img {
     animation-name: financial-wellness-img;
+    transform: scale(0.626629213483146) translateY(-105px);
   }
 }
 
