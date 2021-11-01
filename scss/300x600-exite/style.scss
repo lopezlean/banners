@@ -281,7 +281,7 @@ body a {
     animation-name: textline1-champagne;
   }
   .framed-img {
-    transform: translate(-549px, -798px);
+    transform: translate(-550px, -799px);
     width: 1099px;
     height: 1597px;
     img {
@@ -673,10 +673,12 @@ body a {
   }
 
   .framed-img {
-    width: 898px;
-    height: 2077px;
-    transform: translate(-50%, -50%);
+    transform: translate(-550px, -799px);
+    width: 1099px;
+    height: 1597px;
     img {
+      width: 1099px;
+      height: 1597px;
       animation-name: img-champagne-retargeting;
       transform: scale(0.273) translateY(359px) translateX(0px) translateZ(0);
     }
