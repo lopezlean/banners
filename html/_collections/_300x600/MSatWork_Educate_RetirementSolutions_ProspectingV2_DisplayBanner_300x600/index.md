@@ -1,5 +1,6 @@
 ---
 layout: "600x300"
+bodyClass: "retirement-solutions"
 l1: "Take care of tomorrow"
 l2: "so your employees can"
 l3: "focus on today."

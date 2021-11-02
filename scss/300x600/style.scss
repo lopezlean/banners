@@ -505,3 +505,31 @@ body a {
   }
 }
 
+
+@keyframes img-retirement-solutions {
+  0%,
+  6.66667% {
+    transform: scale(1) translate(38px, -20px);
+  }
+
+  16.66667% {
+    transform: scale(0.578279266572638) translate(38px, -20px);
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.401269393511989) translate(0px, -239px);
+  }
+}
+
+.retirement-solutions{
+  .framed-img {
+    width: 665px;
+    height: 987px;
+    img {
+      animation-name: img-retirement-solutions;
+      transform: scale(0.401269393511989) translate(0px, -239px);
+    }
+  }
+}
