@@ -809,3 +809,31 @@ body a {
     }
   }
 }
+
+@keyframes img-financial-wellness {
+
+  0%,
+  6.66667% {
+    transform: scale(1) translate(0, -20px)
+  }
+
+  16.66667% {
+    transform: scale(0.95) translate(0, 0)
+  }
+
+  25.33333%,
+  53.33333%,
+  100% {
+    transform: scale(0.47808) translate(295px, 98px);
+  }
+}
+.financial-wellness{
+  .framed-img{
+    width: 1372px;
+    height: 536px;
+    img{
+      animation-name: img-financial-wellness;
+      transform: scale(0.47808) translate(295px, 98px);
+    }
+  }
+}

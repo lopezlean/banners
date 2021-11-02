@@ -1,5 +1,6 @@
 ---
 layout: "970x250"
+bodyClass: "financial-wellness"
 l1: "Replace your employees’"
 l2: "debt with financial"
 l3: "confidence."
