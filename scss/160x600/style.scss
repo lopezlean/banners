@@ -435,17 +435,17 @@ body a {
 @keyframes img-wellness {
   0%,
   6.66667% {
-    transform: scale(1) translate(129px, -530px);
+    transform: scale(1) translate(0px, -110px);
   }
 
   16.66667% {
-    transform: scale(0.92) translate(129px, -530px);
+    transform: scale(0.847241867043847) translate(0, -110px);
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.327) translate(-24px, -1200px);
+    transform: scale(0.401697312588402) translate(0, -230px);
   }
 }
 
@@ -472,15 +472,15 @@ body a {
 
 .wellness {
   .frame-b {
-    animation: c-b-wellness 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+    //animation: c-b-wellness 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
   }
   .framed-img {
-    //background-color: red;
+    width: 313px;
+    height: 986px;
     img {
-      width: 418px;
-      height: 1210px;
+
       animation-name: img-wellness;
-      transform: scale(0.327) translate(-24px, -1200px);
+      transform: scale(0.401697312588402) translate(0, -230px);
     }
 
   }
