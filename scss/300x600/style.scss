@@ -480,27 +480,28 @@ body a {
 @keyframes img-financial-empowerment {
   0%,
   6.66667% {
-    transform: scale(1) translate(-72px, 189px);
+    transform: scale(1) translate(-82px, 129px);
   }
 
   16.66667% {
-    transform: scale(0.728515625) translate(-72px, 189px);
+    transform: scale(0.728515625) translate(-82px, 59px);
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.30225) translate(0px, -309px);
+    transform: scale(0.335) translate(0px, -290px);
   }
 }
 
 .financial-empowerment {
   .framed-img {
-    width: 857px;
-    height: 1327px;
+    width: 777px;
+    height: 1191px;
+    transform: translate(-388px, -595px);
     img {
       animation-name: img-financial-empowerment;
-      transform: scale(0.30225) translate(0px, -309px);
+      transform: scale(0.335) translate(0px, -290px);
     }
   }
 }
