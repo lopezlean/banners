@@ -1,5 +1,6 @@
 ---
 layout: "600x300"
+bodyClass: "financial-wellness"
 l1: "Turn your employees’"
 l2: "financial stress into"
 l3: "financial confidence."
