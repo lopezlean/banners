@@ -522,28 +522,28 @@ body a {
 @keyframes img-retirament-solutions {
   0%,
   6.66667% {
-    transform: scale(1) translate(5px,-24px);
+    transform: scale(1) translate(-73px,-54px);
   }
 
   16.66667% {
-    transform: scale(0.578279266572638) translate(-15px, -154px);
+    transform: scale(0.568406205923836) translate(-13px, -154px);
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.40197461212976) translate(0px, -222px);
+    transform: scale(0.402679830747532) translate(0px, -242px);
   }
 }
 
 .retirament-solutions{
   .framed-img {
-    width: 301px;
-    height: 985px;
+    width: 300px;
+    height: 987px;
     transform: translate(-150px,-492px);
     img {
       animation-name: img-retirament-solutions;
-      transform: scale(0.40197461212976) translate(0px, -222px);
+      transform: scale(0.402679830747532) translate(0px, -242px);
     }
 
   }
