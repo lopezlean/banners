@@ -1,5 +1,6 @@
 ---
 layout: "160x600"
+bodyClass: "financial-empowerment"
 l1: "Help your"
 l2: "employees go"
 l3: "further in life"
