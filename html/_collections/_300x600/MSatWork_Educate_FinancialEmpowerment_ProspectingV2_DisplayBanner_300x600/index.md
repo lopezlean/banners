@@ -1,5 +1,6 @@
 ---
 layout: "600x300"
+bodyClass: "financial-empowerment"
 l1: "Empower your"
 l2: "employees to achieve"
 l3: "their life goals."
