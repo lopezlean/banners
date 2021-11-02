@@ -472,9 +472,7 @@ body a {
 }
 
 .wellness {
-  .frame-b {
-    //animation: c-b-wellness 12s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
-  }
+  
   .framed-img {
     width: 313px;
     height: 986px;
@@ -489,63 +487,32 @@ body a {
 
 
 
+
 @keyframes img-equity-solutions {
   0%,
   6.66667% {
-    transform: scale(1) translate(-5px,140px);
+    transform: scale(1) translate(10px,75px);
   }
 
   16.66667% {
-    transform: scale(0.521484375) translate(-5px, 140px);
+    transform: scale(0.65581675708258) translate(20px, 0px);
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.28466796875) translate(15px, -292px);
+    transform: scale(0.38457) translate(5px, -262px);
   }
 }
 
 .equity-solutions{
   .framed-img {
-    width: 460px;
-    height: 1425px;
-    transform: translate(-230px, -712px);
+    width: 319px;
+    height: 1060px;
+    transform: translate(-162px, -530px);
     img {
       animation-name: img-equity-solutions;
-      transform: scale(0.28466796875) translate(15px, -292px);
-    }
-
-  }
-}
-
-
-
-@keyframes img-equity-solutions {
-  0%,
-  6.66667% {
-    transform: scale(1) translate(-5px,140px);
-  }
-
-  16.66667% {
-    transform: scale(0.521484375) translate(-5px, 140px);
-  }
-
-  25.33333%,
-  53.33333%,
-  100% {
-    transform: scale(0.28466796875) translate(15px, -292px);
-  }
-}
-
-.equity-solutions{
-  .framed-img {
-    width: 460px;
-    height: 1425px;
-    transform: translate(-230px, -712px);
-    img {
-      animation-name: img-equity-solutions;
-      transform: scale(0.28466796875) translate(15px, -292px);
+      transform: scale(0.38457) translate(5px, -262px);
     }
 
   }
