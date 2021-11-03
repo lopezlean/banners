@@ -126,7 +126,7 @@ body a {
 .services {
   font-size: 2em;
   margin: -.25em 0 0;
-  padding: 24px;
+  padding: 20px;
   top: 0
 }
 
@@ -148,7 +148,7 @@ body a {
 .msg {
   font-size: 2em;
   margin: -.25em 0 0;
-  padding: 24px;
+  padding: 20px;
   top: 0
 }
 
@@ -198,46 +198,20 @@ body a {
   }
 
   16.66667% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px)
   }
 
   25.33333%,
   53.33333% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px)
   }
 
   60%,
   100% {
-    -webkit-transform: translate(0, 24px);
-    transform: translate(0, 24px)
-  }
-}
-
-@-webkit-keyframes c-r {
-
-  0%,
-  6.66667% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0)
-  }
-
-  16.66667% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0)
-  }
-
-  25.33333%,
-  53.33333% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0)
-  }
-
-  60%,
-  100% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0)
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
   }
 }
 
@@ -256,42 +230,17 @@ body a {
 
   25.33333%,
   53.33333% {
-    -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0)
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0)
   }
 
   60%,
   100% {
     -webkit-transform: translate(-24px, 0);
-    transform: translate(-24px, 0)
+    transform: translate(-20px, 0)
   }
 }
 
-@-webkit-keyframes c-b {
-
-  0%,
-  6.66667% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0)
-  }
-
-  16.66667% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
-  }
-
-  25.33333%,
-  53.33333% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
-  }
-
-  60%,
-  100% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
-  }
-}
 
 @keyframes c-b {
 
@@ -302,48 +251,23 @@ body a {
   }
 
   16.66667% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px)
   }
 
   25.33333%,
   53.33333% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px)
   }
 
   60%,
   100% {
-    -webkit-transform: translate(0, -24px);
-    transform: translate(0, -24px)
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px)
   }
 }
 
-@-webkit-keyframes c-l {
-
-  0%,
-  6.66667% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0)
-  }
-
-  16.66667% {
-    -webkit-transform: translate(24px, 0);
-    transform: translate(24px, 0)
-  }
-
-  25.33333%,
-  53.33333% {
-    -webkit-transform: translate(300px, 0);
-    transform: translate(300px, 0)
-  }
-
-  60%,
-  100% {
-    -webkit-transform: translate(300px, 0);
-    transform: translate(300px, 0)
-  }
-}
 
 @keyframes c-l {
 
@@ -789,23 +713,23 @@ body a {
   }
 
   16.66667% {
-    transform: scale(0.634222919937206) translate(0px, 133px)
+    transform: scale(0.634222919937206) translate(0px, 63px)
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.513343799058085) translate(269px, -0px);
+    transform: scale(0.514) translate(269px, -0px);
   }
 }
 
 .retirement-solutions{
   .framed-img{
     width: 1274px;
-    height: 503px;
+    height: 519px;
     img{
       animation-name: img-retirement-solutions;
-      transform: scale(0.51638) translate(269px, -17px);
+      transform: scale(0.514) translate(269px, -0px);
     }
   }
 }
