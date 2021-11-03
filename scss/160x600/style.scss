@@ -436,17 +436,17 @@ body a {
 @keyframes img-wellness {
   0%,
   6.66667% {
-    transform: scale(1) translate(0px, -110px);
+    transform: scale(1) translate(87px, -210px);
   }
 
   16.66667% {
-    transform: scale(0.847241867043847) translate(0, -110px);
+    transform: scale(0.622771707878091) translate(55px, -310px);
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.401697312588402) translate(0, -230px);
+    transform: scale(0.32605) translate(-134px, -290px);
   }
 }
 
@@ -472,14 +472,13 @@ body a {
 }
 
 .wellness {
-  
   .framed-img {
-    width: 313px;
-    height: 986px;
+    width: 369px;
+    height: 1210px;
     img {
 
       animation-name: img-wellness;
-      transform: scale(0.401697312588402) translate(0, -230px);
+      transform: scale(0.32605) translate(-134px, -290px);
     }
 
   }
