@@ -713,13 +713,13 @@ body a {
   }
 
   16.66667% {
-    transform: scale(0.634222919937206) translate(0px, 63px)
+    transform: scale(0.75) translate(18px, 63px)
   }
 
   25.33333%,
   53.33333%,
   100% {
-    transform: scale(0.514) translate(269px, -20px);
+    transform: scale(0.514) translate(277px, -20px);
   }
 }
 
@@ -729,7 +729,7 @@ body a {
     height: 457px;
     img{
       animation-name: img-retirement-solutions;
-      transform: scale(0.514) translate(269px, -20px);
+      transform: scale(0.514) translate(277px, -20px);
     }
   }
 }
