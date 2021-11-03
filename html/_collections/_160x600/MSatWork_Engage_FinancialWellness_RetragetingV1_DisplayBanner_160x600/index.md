@@ -10,4 +10,5 @@ taglineSlogan: "Your company at its best"
 service1: "Get started"
 service2: "today with"
 service3: "Financial Wellness."
+imageAlt: "Two women and a man pop champagne in an office to celebrate paying off their student debt."
 ---

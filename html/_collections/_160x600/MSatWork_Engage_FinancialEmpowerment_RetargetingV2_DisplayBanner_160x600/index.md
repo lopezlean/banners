@@ -11,4 +11,5 @@ service1: "See what our"
 service2: "Financial"
 service3: "Empowerment"
 service4: "can do."
+imageAlt: "A happy couple jumping and hugging in the air in front of their newly purchased home."
 ---

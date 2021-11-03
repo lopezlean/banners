@@ -9,4 +9,5 @@ taglineSlogan: "Your company<br /> at its best"
 service1: "Explore "
 service2: "Equity Edge Online®"
 service3: "and Shareworks."
+imageAlt: "An employee doing a victory leap because his company shares just vested while coworkers cheer him on."
 ---

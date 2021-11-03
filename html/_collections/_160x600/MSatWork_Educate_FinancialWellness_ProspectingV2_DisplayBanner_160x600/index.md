@@ -10,4 +10,5 @@ taglineSlogan: "Your company at its best"
 service1: "Learn more about"
 service2: "Financial Wellness."
 service3: ""
+imageAlt: "Two women and a man pop champagne in an office to celebrate paying off their student debt."
 ---

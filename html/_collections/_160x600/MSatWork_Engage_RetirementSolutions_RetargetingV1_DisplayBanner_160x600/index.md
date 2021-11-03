@@ -10,4 +10,5 @@ taglineSlogan: "Your company at its best"
 service1: "Get started"
 service2: "today with"
 service3: "Retirement Solutions."
+imageAlt: "An older woman held up by cheering coworkers with a “Happy Retirement” banner and confetti in the background."
 ---

@@ -9,4 +9,5 @@ taglineSlogan: "Your company<br /> at its best"
 service1: "Discover what"
 service2: "Financial Empowerment."
 service3: "can do."
+imageAlt: "A happy couple jumping and hugging in the air in front of their newly purchased home."
 ---
