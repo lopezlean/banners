@@ -1,11 +1,12 @@
 ---
 layout: "970x250"
 bodyClass: "financial-wellness"
-l1: "Replace your employees’"
-l2: "debt with financial"
-l3: "confidence."
+l1: "Help your employees gain"
+l2: "financial confidence."
+l3: ""
 taglineTitle: "Morgan Stanley at Work"
 taglineSlogan: "Your company<br /> at its best"
-service1: "See what Financial Wellness"
-service2: "can do."
+service1: "See what"
+service2: "Financial Wellness"
+service3: "can do."
 ---
