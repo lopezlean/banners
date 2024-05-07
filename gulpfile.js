@@ -1,6 +1,6 @@
 // Gulpfile.js
 const gulp = require("gulp");
-const sass = require("gulp-sass")(require("node-sass"));
+const sass = require("gulp-dart-sass");
 const browserSync = require("browser-sync");
 const sourcemaps = require("gulp-sourcemaps");
 const prefix = require("gulp-autoprefixer");
@@ -25,7 +25,7 @@ const {
 
 
 const sourceDir = 'html/';
-const zipName = 'Morgan_StanleyatWork_Banners';
+const zipName = 'Banners';
 // Base directory
 const outputDir = 'site/';
 const imagesSrc = `./html/_collections/**/*.jpg`;
