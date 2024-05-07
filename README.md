@@ -15,8 +15,8 @@ This project showcases a collection of animated HTML banners, designed using CSS
 
 ## Getting Started
 To get started with this project, follow these steps:
-1. Clone the repository: `git clone https://your-repository-url`
-2. Navigate to the project directory: `cd your-project-directory`
+1. Clone the repository: `git clone https://github.com/lopezlean/banners.git`
+2. Navigate to the project directory: `cd banners`
 3. Install packages : `npm install`
 4. Install jekyll: [`gem install jekyll`](https://jekyllrb.com/docs/installation/)
 5. Run bundle install: `bundle install`
